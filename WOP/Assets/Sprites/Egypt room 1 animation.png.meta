@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: bd70d0b4dec554d799a17895be4719e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7123484122373947915
+    second: Egypt room 1 animation_0
+  - first:
+      213: 2604343189309544903
+    second: Egypt room 1 animation_1
+  - first:
+      213: -4905553885662725602
+    second: Egypt room 1 animation_2
+  - first:
+      213: -6175814825792135669
+    second: Egypt room 1 animation_3
+  - first:
+      213: 5869688874235845132
+    second: Egypt room 1 animation_4
+  - first:
+      213: 737102847757368755
+    second: Egypt room 1 animation_5
+  - first:
+      213: 3973573710311033832
+    second: Egypt room 1 animation_6
+  - first:
+      213: 6759669782641302571
+    second: Egypt room 1 animation_7
+  - first:
+      213: -8889542829114245992
+    second: Egypt room 1 animation_8
+  - first:
+      213: -2128517257583273868
+    second: Egypt room 1 animation_9
+  - first:
+      213: 1160652641783761926
+    second: Egypt room 1 animation_10
+  - first:
+      213: 5415650268099700763
+    second: Egypt room 1 animation_11
+  - first:
+      213: 7906295702441724173
+    second: Egypt room 1 animation_12
+  - first:
+      213: -1835279273990838304
+    second: Egypt room 1 animation_13
+  - first:
+      213: 8203878564732682097
+    second: Egypt room 1 animation_14
+  - first:
+      213: -6355185163828977140
+    second: Egypt room 1 animation_15
+  - first:
+      213: 3242390284740661076
+    second: Egypt room 1 animation_16
+  - first:
+      213: -8805208211535085776
+    second: Egypt room 1 animation_17
+  - first:
+      213: -5036684002388374029
+    second: Egypt room 1 animation_18
+  - first:
+      213: 1287893447561224392
+    second: Egypt room 1 animation_19
+  - first:
+      213: -5037022588388854450
+    second: Egypt room 1 animation_20
+  - first:
+      213: 4901204367255545039
+    second: Egypt room 1 animation_21
+  - first:
+      213: 7227923116249731933
+    second: Egypt room 1 animation_22
+  - first:
+      213: 7765081346045862816
+    second: Egypt room 1 animation_23
+  - first:
+      213: -2084819814580388489
+    second: Egypt room 1 animation_24
+  - first:
+      213: 2276639556832010668
+    second: Egypt room 1 animation_25
+  - first:
+      213: 8574185586292331097
+    second: Egypt room 1 animation_26
+  - first:
+      213: 602677176916959114
+    second: Egypt room 1 animation_27
+  - first:
+      213: 4109956412649850999
+    second: Egypt room 1 animation_28
+  - first:
+      213: -5196877060279756811
+    second: Egypt room 1 animation_29
+  - first:
+      213: -707171421939480708
+    second: Egypt room 1 animation_30
+  - first:
+      213: -35461666132752548
+    second: Egypt room 1 animation_31
+  - first:
+      213: 8031399762524843770
+    second: Egypt room 1 animation_32
+  - first:
+      213: -4119490561661351579
+    second: Egypt room 1 animation_33
+  - first:
+      213: -94590486498542127
+    second: Egypt room 1 animation_34
+  - first:
+      213: 8838524144650318136
+    second: Egypt room 1 animation_35
+  - first:
+      213: 3588234005746752770
+    second: Egypt room 1 animation_36
+  - first:
+      213: 5168495866887647440
+    second: Egypt room 1 animation_37
+  - first:
+      213: 4361307984162322610
+    second: Egypt room 1 animation_38
+  - first:
+      213: -2629687241774991053
+    second: Egypt room 1 animation_39
+  - first:
+      213: 5925315159715062722
+    second: Egypt room 1 animation_40
+  - first:
+      213: -4310759076319104753
+    second: Egypt room 1 animation_41
+  - first:
+      213: 5741965105032692101
+    second: Egypt room 1 animation_42
+  - first:
+      213: 6128225727246315282
+    second: Egypt room 1 animation_43
+  - first:
+      213: 5342999814220206595
+    second: Egypt room 1 animation_44
+  - first:
+      213: 2864137554475752537
+    second: Egypt room 1 animation_45
+  - first:
+      213: 4981957304899293387
+    second: Egypt room 1 animation_46
+  - first:
+      213: 7760142696301462973
+    second: Egypt room 1 animation_47
+  - first:
+      213: 3391297796113361037
+    second: Egypt room 1 animation_48
+  - first:
+      213: -8862842693683832264
+    second: Egypt room 1 animation_49
+  - first:
+      213: 2908657647944417498
+    second: Egypt room 1 animation_50
+  - first:
+      213: -1327634429616235460
+    second: Egypt room 1 animation_51
+  - first:
+      213: 5040686362491328164
+    second: Egypt room 1 animation_52
+  - first:
+      213: 4964325921508290496
+    second: Egypt room 1 animation_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Egypt room 1 animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf3cabeec442d90800000000000000
+      internalID: -7123484122373947915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9d000155c742420800000000000000
+      internalID: 2604343189309544903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_2
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a39825bb8fbebb0800000000000000
+      internalID: -4905553885662725602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_3
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e911603291b4aa0800000000000000
+      internalID: -6175814825792135669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_4
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ad3e2aee2557150800000000000000
+      internalID: 5869688874235845132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_5
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdb18b7227ba3a00800000000000000
+      internalID: 737102847757368755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_6
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb8be39c38f42730800000000000000
+      internalID: 3973573710311033832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_7
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd6416adb2fcd50800000000000000
+      internalID: 6759669782641302571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_8
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c360f45eff1a480800000000000000
+      internalID: -8889542829114245992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_9
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478d573e4dcf572e0800000000000000
+      internalID: -2128517257583273868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_10
+      rect:
+        serializedVersion: 2
+        x: 3830
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cc325ad677b1010800000000000000
+      internalID: 1160652641783761926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Egypt room 1 animation_11
+      rect:
+        serializedVersion: 2
+        x: 4213
+        y: 0
+        width: 383
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18e4d9b931482b40800000000000000
+      internalID: 5415650268099700763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
