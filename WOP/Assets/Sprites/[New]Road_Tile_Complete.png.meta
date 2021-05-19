@@ -1,16 +1,31 @@
 fileFormatVersion: 2
-guid: 53be5fca341d04f1c9f80fd64b02114e
+guid: 0f7e274ddafcb463fb4f12f155fb8ee7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -727171967447212073
-    second: Road_Tiles_0
+      213: -5892819612984861396
+    second: '[New]Road_Tile_Complete_0'
   - first:
-      213: -3157240902879804084
-    second: Road_Tiles_1
+      213: 6196559226100582802
+    second: '[New]Road_Tile_Complete_1'
   - first:
-      213: -2437375911001075057
-    second: Road_Tiles_2
+      213: -5377224597398156872
+    second: '[New]Road_Tile_Complete_2'
+  - first:
+      213: 3483413386643140844
+    second: '[New]Road_Tile_Complete_3'
+  - first:
+      213: 6906141354423255432
+    second: '[New]Road_Tile_Complete_4'
+  - first:
+      213: 2251455670166724579
+    second: '[New]Road_Tile_Complete_5'
+  - first:
+      213: 5892766882450695442
+    second: '[New]Road_Tile_Complete_6'
+  - first:
+      213: 6361561412691767496
+    second: '[New]Road_Tile_Complete_7'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,28 +155,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Road_Tiles_0
+      name: '[New]Road_Tile_Complete_0'
       rect:
         serializedVersion: 2
-        x: 6
-        y: 5
-        width: 16
+        x: 0
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -170,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dfdfa5c2f098e5f0800000000000000
-      internalID: -727171967447212073
+      spriteID: c2d159298cf783ea0800000000000000
+      internalID: -5892819612984861396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Road_Tiles_1
+      name: '[New]Road_Tile_Complete_1'
       rect:
         serializedVersion: 2
-        x: 38
-        y: 22
-        width: 16
-        height: 14
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c450489602a3f24d0800000000000000
-      internalID: -3157240902879804084
+      spriteID: 299056d09c99ef550800000000000000
+      internalID: 6196559226100582802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Road_Tiles_2
+      name: '[New]Road_Tile_Complete_2'
       rect:
         serializedVersion: 2
-        x: 38
-        y: 5
-        width: 33
-        height: 16
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +215,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82dfa0d583bc2ed0800000000000000
-      internalID: -2437375911001075057
+      spriteID: 8b9079ae7b24065b0800000000000000
+      internalID: -5377224597398156872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Road_Tile_Complete_3'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce074bce402975030800000000000000
+      internalID: 3483413386643140844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Road_Tile_Complete_4'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8818807b8fa87df50800000000000000
+      internalID: 6906141354423255432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Road_Tile_Complete_5'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef93d7d007ce3f10800000000000000
+      internalID: 2251455670166724579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Road_Tile_Complete_6'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215e8a4224057c150800000000000000
+      internalID: 5892766882450695442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Road_Tile_Complete_7'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0335c566ec84850800000000000000
+      internalID: 6361561412691767496
       vertices: []
       indices: 
       edges: []
