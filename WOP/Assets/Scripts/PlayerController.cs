@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     // Vector2 variable to control input
     private Vector2 input;
 
+    public LayerMask solidObjectsLayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +43,12 @@ public class PlayerController : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
-                // Starts to move the player towards the new location
-                StartCoroutine(Move(targetPos));
+                // Checks if the tile that the player is about to enter is an obstacle
+                if (IsWalkable(targetPos))
+                {
+                    // Starts to move the player towards the new location
+                    StartCoroutine(Move(targetPos));
+                }
             }
         }
     }
@@ -62,5 +68,19 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPos;
 
         isMoving = false;
+    }
+
+    // Function called to check if the player can walk on that tile
+    private bool IsWalkable(Vector3 targetPos)
+    {
+        // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
+        if (Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) != null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
