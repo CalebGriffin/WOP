@@ -57,10 +57,10 @@ public class PlayerController : MonoBehaviour
             //input.y = Input.GetAxisRaw("Vertical");
 
             // Prevents the player from moving diagonally by setting one axis to 0 when the other is not
-            /*if (input.x != 0)
+            if (input.x != 0)
             {
                 input.y = 0;
-            }*/
+            }
 
             if (input != Vector2.zero)
             {

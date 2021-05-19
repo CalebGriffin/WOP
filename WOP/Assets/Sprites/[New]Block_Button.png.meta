@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 0a60ff0e8b14d433b9a5cc12a7f6e161
+guid: 8277d12ba5c1149378b997572b37d0b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3859497216053645677
-    second: Fountain_sprite_0
+      213: 1746218771349851491
+    second: '[New]Block_Button_0'
+  - first:
+      213: 8490212831861573762
+    second: '[New]Block_Button_1'
+  - first:
+      213: -1044866752824609393
+    second: '[New]Block_Button_2'
+  - first:
+      213: 5391876076818247430
+    second: '[New]Block_Button_3'
+  - first:
+      213: -9146088578560677275
+    second: '[New]Block_Button_4'
+  - first:
+      213: 6146582176308849942
+    second: '[New]Block_Button_5'
+  - first:
+      213: 1444514336593285977
+    second: '[New]Block_Button_6'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,38 +152,47 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fountain_sprite_0
+      name: '[New]Block_Button_0'
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 64
-        height: 63
+        x: 0
+        y: 16
+        width: 32
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e63810bbf407ac0800000000000000
-      internalID: -3859497216053645677
+      spriteID: 36d4d6e78b0db3810800000000000000
+      internalID: 1746218771349851491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]Block_Button_1'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 18
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2888296669b43d570800000000000000
+      internalID: 8490212831861573762
       vertices: []
       indices: 
       edges: []

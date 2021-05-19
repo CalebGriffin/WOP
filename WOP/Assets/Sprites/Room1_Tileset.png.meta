@@ -1,10 +1,34 @@
 fileFormatVersion: 2
-guid: 0a60ff0e8b14d433b9a5cc12a7f6e161
+guid: 08973619f2fdb4acdb2cd42c5ac224ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3859497216053645677
-    second: Fountain_sprite_0
+      213: 511418487634012129
+    second: Room1_Tileset_0
+  - first:
+      213: -6944941495620169306
+    second: Room1_Tileset_1
+  - first:
+      213: -8049836070508999840
+    second: Room1_Tileset_2
+  - first:
+      213: 2539897416262698732
+    second: Room1_Tileset_3
+  - first:
+      213: 4347790844619989482
+    second: Room1_Tileset_4
+  - first:
+      213: 2992866472020103897
+    second: Room1_Tileset_5
+  - first:
+      213: -7980573275031049058
+    second: Room1_Tileset_6
+  - first:
+      213: 2000024671606249307
+    second: Room1_Tileset_7
+  - first:
+      213: 5012881058383213756
+    second: Room1_Tileset_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,29 +158,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fountain_sprite_0
+      name: Room1_Tileset_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 64
-        height: 63
+        x: 16
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +176,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e63810bbf407ac0800000000000000
-      internalID: -3859497216053645677
+      spriteID: 1e72ef6a76ce81700800000000000000
+      internalID: 511418487634012129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a190bf618c9e9f90800000000000000
+      internalID: -6944941495620169306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b4f256ebc394090800000000000000
+      internalID: -8049836070508999840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6454e3e378f3320800000000000000
+      internalID: 2539897416262698732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae12543dcb4765c30800000000000000
+      internalID: 4347790844619989482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d25fec033cc88920800000000000000
+      internalID: 2992866472020103897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Room1_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c6cc5a3ee4f3190800000000000000
+      internalID: -7980573275031049058
       vertices: []
       indices: 
       edges: []
