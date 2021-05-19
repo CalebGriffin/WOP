@@ -27,6 +27,15 @@ public class PlayerController : MonoBehaviour
 
         controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
+
+        GameObject[] playerObs = GameObject.FindGameObjectsWithTag("Player");
+
+        if (playerObs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Enables the input when the object is enabled
@@ -100,7 +109,7 @@ public class PlayerController : MonoBehaviour
     private bool IsWalkable(Vector3 targetPos)
     {
         // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) != null)
+        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer) != null)
         {
             return false;
         }
