@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,7 +14,32 @@ public class PlayerController : MonoBehaviour
     // Vector2 variable to control input
     private Vector2 input;
 
+    // Allows the script to be able to check which layer an object is on
     public LayerMask solidObjectsLayer;
+
+    // Can see the input that the player is making
+    PlayerControls controls;
+
+    // Awake is called even before Start
+    void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
+        controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
+    }
+
+    // Enables the input when the object is enabled
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    // Disables the input when the object is disabled
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -27,14 +53,14 @@ public class PlayerController : MonoBehaviour
         // if the player is not moving then get the input and move the player
         if (!isMoving)
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
+            //input.x = Input.GetAxisRaw("Horizontal");
+            //input.y = Input.GetAxisRaw("Vertical");
 
             // Prevents the player from moving diagonally by setting one axis to 0 when the other is not
-            if (input.x != 0)
+            /*if (input.x != 0)
             {
                 input.y = 0;
-            }
+            }*/
 
             if (input != Vector2.zero)
             {
