@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -85,6 +86,16 @@ public class PlayerController : MonoBehaviour
                     StartCoroutine(Move(targetPos));
                 }
             }
+        }
+
+        if ((transform.position.x + 0.5f) % 1f != 0f && isMoving == false)
+        {
+            transform.position = new Vector2((float)Math.Round(transform.position.x) + 0.5f, transform.position.y);
+        }
+
+        if ((transform.position.y + 0.5f) % 1f != 0f && isMoving == false)
+        {
+            transform.position = new Vector2(transform.position.x, (float)Math.Round(transform.position.y) + 0.5f);
         }
     }
 
