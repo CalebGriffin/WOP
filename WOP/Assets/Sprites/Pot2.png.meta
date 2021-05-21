@@ -1,22 +1,7 @@
 fileFormatVersion: 2
-guid: 0a60ff0e8b14d433b9a5cc12a7f6e161
+guid: 6413fbc29d8f64dcb935e2dd9fe353e5
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3859497216053645677
-    second: Fountain_sprite_0
-  - first:
-      213: -7461962172279195582
-    second: Fountain_sprite_0
-  - first:
-      213: -2385167425917836700
-    second: Fountain_sprite_1
-  - first:
-      213: 1731682084741300848
-    second: Fountain_sprite_2
-  - first:
-      213: 3432309200216942072
-    second: Fountain_sprite_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -146,105 +131,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Fountain_sprite_0
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24875e180f8c17890800000000000000
-      internalID: -7461962172279195582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fountain_sprite_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 36
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 462a5500dde26eed0800000000000000
-      internalID: -2385167425917836700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fountain_sprite_2
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 4
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 072c9e46eab280810800000000000000
-      internalID: 1731682084741300848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fountain_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 4
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f56c3e480302af20800000000000000
-      internalID: 3432309200216942072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

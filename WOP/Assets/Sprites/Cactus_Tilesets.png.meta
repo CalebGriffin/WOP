@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 0a60ff0e8b14d433b9a5cc12a7f6e161
+guid: 50e93ecbee78b40dc98f08bc34bc3ef1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3859497216053645677
-    second: Fountain_sprite_0
+      213: -2502401119937073195
+    second: Cactus_Tilesets_0
   - first:
-      213: -7461962172279195582
-    second: Fountain_sprite_0
+      213: -2876213504983743461
+    second: Cactus_Tilesets_1
   - first:
-      213: -2385167425917836700
-    second: Fountain_sprite_1
-  - first:
-      213: 1731682084741300848
-    second: Fountain_sprite_2
-  - first:
-      213: 3432309200216942072
-    second: Fountain_sprite_3
+      213: 2602405086746199171
+    second: Cactus_Tilesets_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,27 +140,15 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fountain_sprite_0
+      name: Cactus_Tilesets_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 36
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -176,18 +158,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24875e180f8c17890800000000000000
-      internalID: -7461962172279195582
+      spriteID: 5df6c90907fa54dd0800000000000000
+      internalID: -2502401119937073195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fountain_sprite_1
+      name: Cactus_Tilesets_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 36
+        x: 32
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -197,18 +179,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 462a5500dde26eed0800000000000000
-      internalID: -2385167425917836700
+      spriteID: b1443495e03a518d0800000000000000
+      internalID: -2876213504983743461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fountain_sprite_2
+      name: Cactus_Tilesets_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 4
+        x: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -218,29 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072c9e46eab280810800000000000000
-      internalID: 1731682084741300848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fountain_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 4
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f56c3e480302af20800000000000000
-      internalID: 3432309200216942072
+      spriteID: 3844d2563a99d1420800000000000000
+      internalID: 2602405086746199171
       vertices: []
       indices: 
       edges: []
