@@ -30,17 +30,6 @@ public class PlayerController : MonoBehaviour
         // Read the input from the player and set the value based on the input and set it to 0 when the buttons are not being pressed
         controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
-
-        // Finds all of the gameobjects that have a tag of "Player" and will delete and duplicates
-        GameObject[] playerObs = GameObject.FindGameObjectsWithTag("Player");
-
-        if (playerObs.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
-
-        // Sets up so that the player gameObject will not be destroyed when the next scene is called
-        DontDestroyOnLoad(this.gameObject);
     }
 
     // Enables the input when the object is enabled
