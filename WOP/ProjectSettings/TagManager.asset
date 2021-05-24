@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Room 1
+  - Settings
+  - Controls
+  - Credits
+  - Quit
   layers:
   - Default
   - TransparentFX

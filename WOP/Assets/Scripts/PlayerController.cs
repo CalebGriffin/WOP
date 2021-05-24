@@ -24,19 +24,12 @@ public class PlayerController : MonoBehaviour
     // Awake is called even before Start
     void Awake()
     {
+        // Creates a new instance of the player controls
         controls = new PlayerControls();
 
+        // Read the input from the player and set the value based on the input and set it to 0 when the buttons are not being pressed
         controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
-
-        GameObject[] playerObs = GameObject.FindGameObjectsWithTag("Player");
-
-        if (playerObs.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
-
-        DontDestroyOnLoad(this.gameObject);
     }
 
     // Enables the input when the object is enabled
@@ -58,13 +51,11 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // if the player is not moving then get the input and move the player
         if (!isMoving)
         {
-            //input.x = Input.GetAxisRaw("Horizontal");
-            //input.y = Input.GetAxisRaw("Vertical");
 
             // Prevents the player from moving diagonally by setting one axis to 0 when the other is not
             if (input.x != 0)
@@ -72,6 +63,7 @@ public class PlayerController : MonoBehaviour
                 input.y = 0;
             }
 
+            // When the player is making input to the game
             if (input != Vector2.zero)
             {
                 // Sets up the target position variable
@@ -88,6 +80,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // When ever the player stops moving check that they are in the middle of a tile and snap their position if they are not
         if ((transform.position.x + 0.5f) % 1f != 0f && isMoving == false)
         {
             transform.position = new Vector2((float)Math.Round(transform.position.x) + 0.5f, transform.position.y);
