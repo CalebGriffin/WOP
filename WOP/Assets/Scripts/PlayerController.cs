@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // if the player is not moving then get the input and move the player
         if (!isMoving)
