@@ -24,6 +24,10 @@ public class PlayerController : MonoBehaviour
     // Allows the script to be able to check if the player is touching a block
     public LayerMask blockLayer;
 
+    public GameObject Player;
+
+    public Collider2D hit;
+
     // Can see the input that the player is making
     PlayerControls controls;
 
@@ -127,37 +131,19 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
-        else if (Physics2D.OverlapCircle(targetPos, 0.3f, blockLayer) != null)
+        else
         {
-            if (input.x > 0)
-            {
-                targetPos2 = new Vector2((targetPos.x + 1), targetPos.y);
-            }
-            else if (input.x < 0)
-            {
-                targetPos2 = new Vector2((targetPos.x - 1), targetPos.y);
-            }
-            else if (input.y > 0)
-            {
-                targetPos2 = new Vector2(targetPos.x, (targetPos.y + 1));
-            }
-            else if (input.y < 0)
-            {
-                targetPos2 = new Vector2(targetPos.x, (targetPos.y - 1));
-            }
+            hit = Physics2D.OverlapCircle(targetPos, 0.3f, blockLayer);
 
-            if (Physics2D.OverlapCircle(targetPos2, 0.3f, solidObjectsLayer) != null)
-            {
-                return false;
-            }
-            else
+            if (hit.gameObject == null)
             {
                 return true;
             }
-        }
-        else
-        {
-            return true;
+            else
+            {
+                return false;
+                hit.gameObject.transform.SetParent(Player.transform);
+            }
         }
     }
 }
