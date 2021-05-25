@@ -15,8 +15,14 @@ public class PlayerController : MonoBehaviour
     // Vector2 variable to control input
     private Vector2 input;
 
+    // Vector2 to check if the block can be moved
+    private Vector2 targetPos2;
+
     // Allows the script to be able to check which layer an object is on
     public LayerMask solidObjectsLayer;
+
+    // Allows the script to be able to check if the player is touching a block
+    public LayerMask blockLayer;
 
     // Can see the input that the player is making
     PlayerControls controls;
@@ -71,6 +77,8 @@ public class PlayerController : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
+                Debug.Log(input.x.ToString());
+
                 // Checks if the tile that the player is about to enter is an obstacle
                 if (IsWalkable(targetPos))
                 {
@@ -90,6 +98,8 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, (float)Math.Round(transform.position.y) + 0.5f);
         }
+
+        
     }
 
     // Coroutine that moves the player so that they will snap to each tile
@@ -116,6 +126,34 @@ public class PlayerController : MonoBehaviour
         if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer) != null)
         {
             return false;
+        }
+        else if (Physics2D.OverlapCircle(targetPos, 0.3f, blockLayer) != null)
+        {
+            if (input.x > 0)
+            {
+                targetPos2 = new Vector2((targetPos.x + 1), targetPos.y);
+            }
+            else if (input.x < 0)
+            {
+                targetPos2 = new Vector2((targetPos.x - 1), targetPos.y);
+            }
+            else if (input.y > 0)
+            {
+                targetPos2 = new Vector2(targetPos.x, (targetPos.y + 1));
+            }
+            else if (input.y < 0)
+            {
+                targetPos2 = new Vector2(targetPos.x, (targetPos.y - 1));
+            }
+
+            if (Physics2D.OverlapCircle(targetPos2, 0.3f, solidObjectsLayer) != null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
         else
         {
