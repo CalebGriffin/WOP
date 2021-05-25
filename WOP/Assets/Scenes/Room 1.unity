@@ -998,7 +998,7 @@ GameObject:
   - component: {fileID: 998867663}
   - component: {fileID: 998867664}
   m_Layer: 10
-  m_Name: New Sprite (2)
+  m_Name: Block 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1043,10 +1043,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f259feb2a0cd343dbaec8a0e230e2d76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66f4794e357994b6f8ec7d873531cab6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -1389,8 +1389,8 @@ Tilemap:
   - first: {x: 2, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1497,8 +1497,8 @@ Tilemap:
   - first: {x: 2, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 0
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1637,14 +1637,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9bfe2ad434fb67241b8bdfec40daf97a, type: 2}
   - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 7dd786887af934a16a3f25d936f18e3f, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 14
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: ff73056b409354c9ebdbbbb265304c50, type: 2}
+  - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 664cd9b117e3eee40b2a446d85d0b5e5, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 21c76acac49957c4fab7da020d0065ff, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 14
+  - m_RefCount: 12
     m_Data: {fileID: 21300000, guid: a7c44a1318eb94a488911394b0779eb1, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: a5e805b455dbf4b43a7656d400caf31b, type: 3}
@@ -1654,8 +1654,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: fc31fa56fe52a454e9e2588b173aa0f0, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: 21300000, guid: 3f2b3961f10a29e47aa8a2fac308665b, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 21300000, guid: 1a0060c5cf09047e3b9c9ede79c6d233, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
@@ -1813,7 +1813,7 @@ GameObject:
   - component: {fileID: 1201586773}
   - component: {fileID: 1201586774}
   m_Layer: 10
-  m_Name: New Sprite
+  m_Name: Block 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,7 +3228,7 @@ GameObject:
   - component: {fileID: 1976590394}
   - component: {fileID: 1976590395}
   m_Layer: 10
-  m_Name: New Sprite (3)
+  m_Name: Block 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3273,10 +3273,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f259feb2a0cd343dbaec8a0e230e2d76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66f4794e357994b6f8ec7d873531cab6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -3412,6 +3412,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071348, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071348, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071348, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2871567363241071349, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
       propertyPath: m_Name
@@ -3432,7 +3462,7 @@ GameObject:
   - component: {fileID: 2102257080}
   - component: {fileID: 2102257082}
   m_Layer: 10
-  m_Name: New Sprite (1)
+  m_Name: Block 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
