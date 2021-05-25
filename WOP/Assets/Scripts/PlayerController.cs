@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Player;
 
+    public Collider2D[] emptyGameObjects;
+
     public Collider2D hit;
 
     // Can see the input that the player is making
@@ -135,14 +137,14 @@ public class PlayerController : MonoBehaviour
         {
             hit = Physics2D.OverlapCircle(targetPos, 0.3f, blockLayer);
 
-            if (hit.gameObject == null)
+            if (emptyGameObjects[0] != null)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
-                hit.gameObject.transform.SetParent(Player.transform);
+                Debug.Log(emptyGameObjects[0].gameObject.name);
+                return true;
             }
         }
     }
