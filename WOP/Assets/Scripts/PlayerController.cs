@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     // Can see the input that the player is making
     PlayerControls controls;
 
+    public Animator playerAnimator;
+
     // Awake is called even before Start
     void Awake()
     {
@@ -42,6 +44,8 @@ public class PlayerController : MonoBehaviour
         // Read the input from the player and set the value based on the input and set it to 0 when the buttons are not being pressed
         controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
+
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Enables the input when the object is enabled
@@ -78,12 +82,16 @@ public class PlayerController : MonoBehaviour
             // When the player is making input to the game
             if (input != Vector2.zero)
             {
+                Debug.Log(input.x.ToString() + ", " + input.y.ToString());
+
+                // Sets the animations based on the direction the player is moving
+                playerAnimator.SetFloat("MoveX", input.x);
+                playerAnimator.SetFloat("MoveY", input.y);
+
                 // Sets up the target position variable
                 var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
-
-                Debug.Log(input.x.ToString());
 
                 // Checks if the tile that the player is about to enter is an obstacle
                 if (IsWalkable(targetPos))
@@ -135,17 +143,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            hit = Physics2D.OverlapCircle(targetPos, 0.3f, blockLayer);
-
-            if (emptyGameObjects[0] != null)
-            {
-                return false;
-            }
-            else
-            {
-                Debug.Log(emptyGameObjects[0].gameObject.name);
-                return true;
-            }
+            return true;
         }
     }
 }
