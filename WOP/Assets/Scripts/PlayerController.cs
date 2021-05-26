@@ -24,11 +24,13 @@ public class PlayerController : MonoBehaviour
     // Allows the script to be able to check if the player is touching a block
     public LayerMask blockLayer;
 
+    public LayerMask ignoreRaycastLayer;
+
     public GameObject Player;
 
-    public Collider2D[] emptyGameObjects;
+    public Collider2D emptyGameObjects;
 
-    public Collider2D hit;
+    public RaycastHit2D hit;
 
     // Can see the input that the player is making
     PlayerControls controls;
@@ -136,14 +138,55 @@ public class PlayerController : MonoBehaviour
     // Function called to check if the player can walk on that tile
     private bool IsWalkable(Vector3 targetPos)
     {
-        // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
-        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer) != null)
+        emptyGameObjects = Physics2D.OverlapCircle(targetPos, 0.3f, ~ignoreRaycastLayer);
+
+        if (emptyGameObjects == null)
         {
-            return false;
+            return true;
         }
         else
         {
+            if (emptyGameObjects.gameObject.layer == solidObjectsLayer)
+            {
+                return false;
+            }
+            else if (emptyGameObjects.gameObject.layer == blockLayer)
+            {
+                emptyGameObjects.transform.SetParent(transform);
+                return true;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
+
+    private bool IsWalkable2(Vector3 targetPos)
+    {
+        hit = Physics2D.Raycast(transform.position, input, 1f, ~ignoreRaycastLayer);
+        Debug.DrawRay(transform.position, input, Color.white, 1f);
+
+        if (hit.transform == null)
+        {
             return true;
+        }
+        else
+        {
+            // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
+            if (hit.transform.gameObject.layer == solidObjectsLayer)
+            {
+                return false;
+            }
+            else if (hit.transform.gameObject.layer == blockLayer)
+            {
+                hit.transform.SetParent(transform);
+                return true;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
