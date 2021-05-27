@@ -7,6 +7,12 @@ public class BlockController : MonoBehaviour
 {
     public bool isMoving;
 
+    public BoxCollider2D hitbox;
+    
+    public SpriteRenderer renderer;
+
+    public Vector3 voidPos = new Vector3(4.5f, 0.5f, 0f);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +29,17 @@ public class BlockController : MonoBehaviour
         else
         {
             isMoving = false;
+        }
+
+        if (!isMoving)
+        {
+            if (transform.position == voidPos && gVar.isFilled == false)
+            {
+                hitbox.enabled = false;
+                renderer.sortingOrder = -1;
+
+                gVar.isFilled = true;
+            }
         }
 
         // When ever the player stops moving check that they are in the middle of a tile and snap their position if they are not

@@ -1881,6 +1881,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMoving: 0
+  hitbox: {fileID: 1201586772}
+  renderer: {fileID: 1201586770}
+  voidPos: {x: 4.5, y: 0.5, z: 0}
 --- !u!1 &1416996807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,6 +3566,11 @@ PrefabInstance:
       propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071348, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2871567363241071349, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
       propertyPath: m_Name
@@ -3702,3 +3710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMoving: 0
+  hitbox: {fileID: 2102257080}
+  renderer: {fileID: 2102257078}
+  voidPos: {x: 4.5, y: 0.5, z: 0}
