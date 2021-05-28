@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     // Tracks if the player is moving or not
     public bool isMoving;
 
+    public bool isPushing;
+
     // Vector2 variable to control input
     private Vector2 input;
 
@@ -24,11 +26,13 @@ public class PlayerController : MonoBehaviour
     // Allows the script to be able to check if the player is touching a block
     public LayerMask blockLayer;
 
+    public LayerMask ignoreRaycastLayer;
+
     public GameObject Player;
 
-    public Collider2D[] emptyGameObjects;
+    public Collider2D tileToCheck;
 
-    public Collider2D hit;
+    public Collider2D tileToCheck2;
 
     // Can see the input that the player is making
     PlayerControls controls;
@@ -136,14 +140,96 @@ public class PlayerController : MonoBehaviour
     // Function called to check if the player can walk on that tile
     private bool IsWalkable(Vector3 targetPos)
     {
-        // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
-        if (Physics2D.OverlapCircle(targetPos, 0.3f, solidObjectsLayer) != null)
+        tileToCheck = Physics2D.OverlapCircle(targetPos, 0.3f, ~ignoreRaycastLayer);
+
+        if (tileToCheck == null)
         {
-            return false;
+            Debug.Log("Hit nothing");
+            return true;
         }
         else
         {
-            return true;
+            Debug.Log(tileToCheck.gameObject.name.ToString());
+
+            if (tileToCheck.gameObject.layer == 8)
+            {
+                return false;
+            }
+            else if (tileToCheck.gameObject.layer == 10)
+            {
+                Debug.Log("GOT HERE");
+
+                if (input.x > 0)
+                {
+                    targetPos2 = new Vector2((targetPos.x + 1), targetPos.y);
+                }
+                else if (input.x < 0)
+                {
+                    targetPos2 = new Vector2((targetPos.x - 1), targetPos.y);
+                }
+                else if (input.y > 0)
+                {
+                    targetPos2 = new Vector2(targetPos.x, (targetPos.y + 1));
+                }
+                else if (input.y < 0)
+                {
+                    targetPos2 = new Vector2(targetPos.x, (targetPos.y - 1));
+                }
+
+                Debug.Log(targetPos2.x.ToString() + ", " + targetPos2.y.ToString());
+
+                tileToCheck2 = Physics2D.OverlapCircle(targetPos2, 0.3f, ~ignoreRaycastLayer);
+
+                if (tileToCheck2 != null)
+                {
+                    return false;
+                }
+                else
+                {
+                    tileToCheck.transform.SetParent(transform);
+                    StartCoroutine("WaitToUnparent");
+                    return true;
+                }
+            }
+            else
+            {
+                return true;
+            }
         }
     }
+
+    public IEnumerator WaitToUnparent()
+    {
+        yield return new WaitForSeconds(0.35f);
+
+        Player.transform.DetachChildren();
+    }
+
+    /*private bool IsWalkable2(Vector3 targetPos)
+    {
+        hit = Physics2D.Raycast(transform.position, input, 1f, ~ignoreRaycastLayer);
+        Debug.DrawRay(transform.position, input, Color.white, 1f);
+
+        if (hit.transform == null)
+        {
+            return true;
+        }
+        else
+        {
+            // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
+            if (hit.transform.gameObject.layer == solidObjectsLayer)
+            {
+                return false;
+            }
+            else if (hit.transform.gameObject.layer == blockLayer)
+            {
+                hit.transform.SetParent(transform);
+                return true;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }*/
 }

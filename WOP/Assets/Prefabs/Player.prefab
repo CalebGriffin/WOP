@@ -154,9 +154,12 @@ MonoBehaviour:
   blockLayer:
     serializedVersion: 2
     m_Bits: 1024
+  ignoreRaycastLayer:
+    serializedVersion: 2
+    m_Bits: 4
   Player: {fileID: 0}
   emptyGameObjects: []
-  hit: {fileID: 0}
+  playerAnimator: {fileID: 0}
 --- !u!114 &2871567363241071345
 MonoBehaviour:
   m_ObjectHideFlags: 0
