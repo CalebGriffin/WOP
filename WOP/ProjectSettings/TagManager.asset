@@ -10,6 +10,7 @@ TagManager:
   - Credits
   - Quit
   - Banana
+  - Room 2
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Portals
   - Blocks
   - Banana
-  - 
+  - Ice Blocks
   - 
   - 
   - 

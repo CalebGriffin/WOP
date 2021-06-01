@@ -193,7 +193,7 @@ public class PlayerController : MonoBehaviour
                     return true;
                 }
             }
-            else if (tileToCheck.gameObject.layer == 11)
+            else if (tileToCheck.gameObject.layer == 12)
             {
                 tileToCheck.gameObject.GetComponent<IceBlockController>().Slide(input);
                 lastIceBlockPushed = tileToCheck.gameObject;
