@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 5fd76c3bd66884944a6e50e3d95a50f2
+guid: a7630f1398eb141c2a6c5122e8abacdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 778509135490679006
-    second: '[New]Egyptian MC walk_Side_0'
+      213: 5166240254251965339
+    second: '[New]Egyptian MC walk_Side_Left_0'
   - first:
-      213: 8954196221958491369
-    second: '[New]Egyptian MC walk_Side_1'
+      213: -4485517673868753839
+    second: '[New]Egyptian MC walk_Side_Left_1'
   - first:
-      213: 1950289464251128110
-    second: '[New]Egyptian MC walk_Side_2'
+      213: -3682594885579143885
+    second: '[New]Egyptian MC walk_Side_Left_2'
   - first:
-      213: 349442555734908569
-    second: '[New]Egyptian MC walk_Side_3'
+      213: -1757476314621032022
+    second: '[New]Egyptian MC walk_Side_Left_3'
   - first:
-      213: 8660406829515868770
-    second: '[New]Egyptian MC walk_Side_4'
+      213: -9056479809623021457
+    second: '[New]Egyptian MC walk_Side_Left_4'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -150,7 +150,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[New]Egyptian MC walk_Side_0'
+      name: '[New]Egyptian MC walk_Side_Left_0'
       rect:
         serializedVersion: 2
         x: 0
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed0815b1fe1ddca00800000000000000
-      internalID: 778509135490679006
+      spriteID: b9b130ba32c22b740800000000000000
+      internalID: 5166240254251965339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[New]Egyptian MC walk_Side_1'
+      name: '[New]Egyptian MC walk_Side_Left_1'
       rect:
         serializedVersion: 2
         x: 32
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ec0bf2c502b34c70800000000000000
-      internalID: 8954196221958491369
+      spriteID: 154015fd07d30c1c0800000000000000
+      internalID: -4485517673868753839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[New]Egyptian MC walk_Side_2'
+      name: '[New]Egyptian MC walk_Side_Left_2'
       rect:
         serializedVersion: 2
         x: 64
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2910e54fe1d01b10800000000000000
-      internalID: 1950289464251128110
+      spriteID: 3358269767bc4ecc0800000000000000
+      internalID: -3682594885579143885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[New]Egyptian MC walk_Side_3'
+      name: '[New]Egyptian MC walk_Side_Left_3'
       rect:
         serializedVersion: 2
         x: 96
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99edbfb272879d400800000000000000
-      internalID: 349442555734908569
+      spriteID: aa9c9d57a903c97e0800000000000000
+      internalID: -1757476314621032022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[New]Egyptian MC walk_Side_4'
+      name: '[New]Egyptian MC walk_Side_Left_4'
       rect:
         serializedVersion: 2
         x: 128
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26a09ab6022ff2870800000000000000
-      internalID: 8660406829515868770
+      spriteID: f682cefa89be05280800000000000000
+      internalID: -9056479809623021457
       vertices: []
       indices: 
       edges: []
