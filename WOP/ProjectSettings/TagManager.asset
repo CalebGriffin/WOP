@@ -9,6 +9,7 @@ TagManager:
   - Controls
   - Credits
   - Quit
+  - Banana
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Solid Objects
   - Portals
   - Blocks
-  - 
+  - Banana
   - 
   - 
   - 
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Banana
+    uniqueID: 2426216619
     locked: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2871567363241071346}
   - component: {fileID: 2871567363241071345}
   - component: {fileID: 7944932797536058976}
+  - component: {fileID: 5029894076991068079}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -148,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   isMoving: 0
+  isPushing: 0
   solidObjectsLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -158,7 +160,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4
   Player: {fileID: 0}
-  emptyGameObjects: []
+  tileToCheck: {fileID: 0}
+  tileToCheck2: {fileID: 0}
   playerAnimator: {fileID: 0}
 --- !u!114 &2871567363241071345
 MonoBehaviour:
@@ -191,3 +194,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5029894076991068079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871567363241071349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac8f6a11e1d43e42a2aa252b283ff8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
