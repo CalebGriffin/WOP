@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
             movement = direction;
         }
 
-        animator.SetBool("isMoving", isMoving);
+        animator.SetBool("isMoving", true);
     }
     private void FixedUpdate()
     {
