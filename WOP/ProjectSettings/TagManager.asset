@@ -9,6 +9,7 @@ TagManager:
   - Controls
   - Credits
   - Quit
+  - Room 2
   layers:
   - Default
   - TransparentFX

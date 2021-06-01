@@ -13,6 +13,11 @@ public class PlayerTeleporter : MonoBehaviour
             SceneManager.LoadScene("Room 1");
         }
 
+        if (collision.gameObject.tag == "Room 2")
+        {
+            SceneManager.LoadScene("Room 2");
+        }
+
         if (collision.gameObject.tag == "Settings")
         {
             // Here we will make the game open the settings menu

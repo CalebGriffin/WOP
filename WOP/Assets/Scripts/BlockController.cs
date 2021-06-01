@@ -11,12 +11,15 @@ public class BlockController : MonoBehaviour
     
     public SpriteRenderer renderer;
 
-    public Vector3 voidPos = new Vector3(4.5f, 0.5f, 0f);
+    public Vector3 voidPos;
+
+    public Vector3 buttonPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        voidPos = new Vector3(4.5f, 0.5f, 0f);
+        buttonPos = new Vector3(4.5f, 2.5f, 0);
     }
 
     // Update is called once per frame
@@ -39,6 +42,11 @@ public class BlockController : MonoBehaviour
                 renderer.sortingOrder = -1;
 
                 gVar.isFilled = true;
+            }
+
+            if (transform.position == buttonPos)
+            {
+                gVar.normalButton = true;
             }
         }
 

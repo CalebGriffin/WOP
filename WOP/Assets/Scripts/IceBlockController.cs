@@ -10,6 +10,8 @@ public class IceBlockController : MonoBehaviour
 
     public Vector3 targetToMoveTo;
 
+    public Vector3 iceButtonPos;
+
     public Collider2D tileToCheck;
 
     public LayerMask ignoreRaycastLayer;
@@ -18,12 +20,17 @@ public class IceBlockController : MonoBehaviour
     void Start()
     {
         hitSomething = false;
+
+        iceButtonPos = new Vector3(-5.5f, 1.5f, 0);
     }
 
-    // Update is called once per frame
-    void Update()
+    // FixedUpdate is called 50 times per second
+    void FixedUpdate()
     {
-        
+        if (hitSomething == true && transform.position == iceButtonPos)
+        {
+            gVar.iceButton = true;
+        }
     }
 
     public void Slide(Vector2 playerInput)

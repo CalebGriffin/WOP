@@ -336,12 +336,12 @@ PrefabInstance:
     - target: {fileID: 2746040668594510209, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.009552956
+      value: 0.00952673
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668594510209, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8249116
+      value: -3.8130312
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668594510210, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
@@ -351,12 +351,12 @@ PrefabInstance:
     - target: {fileID: 2746040668905630146, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.50955296
+      value: -0.5095267
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668905630146, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3249116
+      value: 0.3130312
       objectReference: {fileID: 0}
     - target: {fileID: 2746040669022752468, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
@@ -3413,6 +3413,12 @@ Transform:
   m_Father: {fileID: 1547965489}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1670437013 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7944932797536058976, guid: 0c213c0b5568048069be3af71f342d87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1788778840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771423754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,6 +3460,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1670437013}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: Player
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
