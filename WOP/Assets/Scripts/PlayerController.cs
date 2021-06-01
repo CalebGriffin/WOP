@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector2(transform.position.x, (float)Math.Round(transform.position.y) + 0.5f);
         }
 
-        
+        playerAnimator.SetBool("isWalking", isMoving);
     }
 
     // Coroutine that moves the player so that they will snap to each tile
