@@ -41,8 +41,6 @@ public class BlockController : MonoBehaviour
                 hitbox.enabled = false;
                 renderer.sortingOrder = -1;
 
-                // Change the sprite of the game object
-
                 gVar.isFilled = true;
             }
 

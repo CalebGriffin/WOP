@@ -56,39 +56,6 @@ TextureImporter:
   - first:
       213: -6593234370799351057
     second: '[New]1st_Room_WallCrack_17'
-  - first:
-      213: 5113830179291583686
-    second: '[New]1st_Room_WallCrack_0'
-  - first:
-      213: 7452779388471410431
-    second: '[New]1st_Room_WallCrack_1'
-  - first:
-      213: -1788886691512035311
-    second: '[New]1st_Room_WallCrack_2'
-  - first:
-      213: -9055143713627418301
-    second: '[New]1st_Room_WallCrack_3'
-  - first:
-      213: -5344394391745414044
-    second: '[New]1st_Room_WallCrack_4'
-  - first:
-      213: 2985786562529476269
-    second: '[New]1st_Room_WallCrack_5'
-  - first:
-      213: 4106884070785493809
-    second: '[New]1st_Room_WallCrack_6'
-  - first:
-      213: 2467495659739971097
-    second: '[New]1st_Room_WallCrack_7'
-  - first:
-      213: -1835272657562240766
-    second: '[New]1st_Room_WallCrack_8'
-  - first:
-      213: 7949584455231336925
-    second: '[New]1st_Room_WallCrack_9'
-  - first:
-      213: -2419633544187294781
-    second: '[New]1st_Room_WallCrack_10'
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -238,9 +205,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4d85e2479f7f640800000000000000
-      internalID: 5113830179291583686
+      spriteID: 9c6ec52c19750ef90800000000000000
+      internalID: -6926439943353080119
       vertices: []
       indices: 
       edges: []
@@ -259,9 +226,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffef0370e579d6760800000000000000
-      internalID: 7452779388471410431
+      spriteID: 7e847a0edb4c06090800000000000000
+      internalID: -8043212614686783257
       vertices: []
       indices: 
       edges: []
@@ -280,9 +247,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118500138099c27e0800000000000000
-      internalID: -1788886691512035311
+      spriteID: 8db48d2820173edc0800000000000000
+      internalID: -3610918220621919272
       vertices: []
       indices: 
       edges: []
@@ -301,9 +268,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3415027c4caa55280800000000000000
-      internalID: -9055143713627418301
+      spriteID: cb5ad859404d4b290800000000000000
+      internalID: -7875436732210108996
       vertices: []
       indices: 
       edges: []
@@ -322,9 +289,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46cbc64dd95e4d5b0800000000000000
-      internalID: -5344394391745414044
+      spriteID: 9be3b65b9cee28bf0800000000000000
+      internalID: -323433673117712711
       vertices: []
       indices: 
       edges: []
@@ -343,9 +310,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dae34ba2f05af6920800000000000000
-      internalID: 2985786562529476269
+      spriteID: b4e4d7e73abca5520800000000000000
+      internalID: 2691687630369541707
       vertices: []
       indices: 
       edges: []
@@ -364,9 +331,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b21ec9d459ef830800000000000000
-      internalID: 4106884070785493809
+      spriteID: dba757bbe3fb67a10800000000000000
+      internalID: 1906921768391899837
       vertices: []
       indices: 
       edges: []
@@ -385,9 +352,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,8 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e7e9baa3e4e3220800000000000000
-      internalID: 2467495659739971097
+      spriteID: 7914994bf8d9c7050800000000000000
+      internalID: 5799683660682183063
       vertices: []
       indices: 
       edges: []
@@ -406,9 +373,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 209f30cdd3dc786e0800000000000000
-      internalID: -1835272657562240766
+      spriteID: a2b355a5d55d57e40800000000000000
+      internalID: 5653659504157735722
       vertices: []
       indices: 
       edges: []
@@ -427,9 +394,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd1f70e71f8925e60800000000000000
-      internalID: 7949584455231336925
+      spriteID: b329ae7e452e51810800000000000000
+      internalID: 1735542085717234235
       vertices: []
       indices: 
       edges: []
@@ -448,9 +415,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 32
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +425,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbc8108c1cbb6ed0800000000000000
-      internalID: -2419633544187294781
+      spriteID: 8cf129a1bf3a95410800000000000000
+      internalID: 1466383452563709896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_11'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f418ff5b737d6ccb0800000000000000
+      internalID: -4843947714913795761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_12'
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b516bc9e263b0310800000000000000
+      internalID: 1372250085290022328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_13'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525cf4ee67ccc8550800000000000000
+      internalID: 6164526801139778853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_14'
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7f9d7858da00060800000000000000
+      internalID: 6917719816662546362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_15'
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abde7be2e4b6c0480800000000000000
+      internalID: -8931645977447109190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_16'
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0212869464520ae0800000000000000
+      internalID: -1584611327882423793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[New]1st_Room_WallCrack_17'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feacb9fa5402084a0800000000000000
+      internalID: -6593234370799351057
       vertices: []
       indices: 
       edges: []
