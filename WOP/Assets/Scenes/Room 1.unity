@@ -3166,6 +3166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 969318197}
+  - component: {fileID: 969318198}
   m_Layer: 0
   m_Name: Blood Holder
   m_TagString: Untagged
@@ -3228,6 +3229,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969318198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969318196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e968af91adbb54999931e5064d4dcf58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodTiles: []
+  iterations: 0
 --- !u!1 &974688901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,6 +4727,7 @@ MonoBehaviour:
   isMoving: 0
   hitbox: {fileID: 1201586772}
   renderer: {fileID: 1201586770}
+  topSprite: {fileID: 21300000, guid: dcf160ff753f1460385e67ea070f4bce, type: 3}
   voidPos: {x: 4.5, y: 0.5, z: 0}
   buttonPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1326945958
@@ -7498,5 +7514,6 @@ MonoBehaviour:
   isMoving: 0
   hitbox: {fileID: 2102257080}
   renderer: {fileID: 2102257078}
+  topSprite: {fileID: 21300000, guid: dcf160ff753f1460385e67ea070f4bce, type: 3}
   voidPos: {x: 4.5, y: 0.5, z: 0}
   buttonPos: {x: 0, y: 0, z: 0}

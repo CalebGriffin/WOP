@@ -11,6 +11,8 @@ public class BlockController : MonoBehaviour
     
     public SpriteRenderer renderer;
 
+    public Sprite topSprite;
+
     public Vector3 voidPos;
 
     public Vector3 buttonPos;
@@ -39,9 +41,10 @@ public class BlockController : MonoBehaviour
             if (transform.position == voidPos && gVar.isFilled == false)
             {
                 hitbox.enabled = false;
+
                 renderer.sortingOrder = -1;
 
-                // Change the sprite of the game object
+                renderer.sprite = topSprite;
 
                 gVar.isFilled = true;
             }
