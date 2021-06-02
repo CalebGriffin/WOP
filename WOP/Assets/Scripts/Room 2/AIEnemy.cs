@@ -40,8 +40,8 @@ public class AIEnemy : MonoBehaviour
         movement = dir;
         if (shouldRotate)
         {
-            anim.SetFloat("x", dir.x);
-            anim.SetFloat("Y", dir.y);
+            anim.SetFloat("moveX", dir.x);
+            anim.SetFloat("moveY", dir.y);
         }
     }
 
