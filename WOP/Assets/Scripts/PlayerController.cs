@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Player;
 
+    public GameObject lastIceBlockPushed;
+
     public Collider2D tileToCheck;
 
     public Collider2D tileToCheck2;
@@ -191,6 +193,13 @@ public class PlayerController : MonoBehaviour
                     return true;
                 }
             }
+            else if (tileToCheck.gameObject.layer == 12)
+            {
+                tileToCheck.gameObject.GetComponent<IceBlockController>().Slide(input);
+                lastIceBlockPushed = tileToCheck.gameObject;
+                StartCoroutine("WaitToStop");
+                return false;
+            }
             else
             {
                 return true;
@@ -203,6 +212,13 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.35f);
 
         Player.transform.DetachChildren();
+    }
+
+    public IEnumerator WaitToStop()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        lastIceBlockPushed.GetComponent<IceBlockController>().hitSomething = false;
     }
 
     /*private bool IsWalkable2(Vector3 targetPos)
