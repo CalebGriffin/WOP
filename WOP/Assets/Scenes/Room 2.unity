@@ -791,12 +791,12 @@ PrefabInstance:
     - target: {fileID: 2746040668594510209, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.009525299
+      value: 0.009555817
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668594510209, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8130407
+      value: -3.824561
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668594510210, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
@@ -806,12 +806,12 @@ PrefabInstance:
     - target: {fileID: 2746040668905630146, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5095253
+      value: -0.5095558
       objectReference: {fileID: 0}
     - target: {fileID: 2746040668905630146, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31304073
+      value: 0.32456112
       objectReference: {fileID: 0}
     - target: {fileID: 2746040669022752468, guid: a81bcaf200ff04942b34e6e0ad28b263,
         type: 3}
@@ -4368,7 +4368,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1547965489}
-  - component: {fileID: 1547965488}
   - component: {fileID: 1547965487}
   m_Layer: 0
   m_Name: BananaSpawner
@@ -4409,21 +4408,6 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 7441134331702895455, guid: c1e487af4b87f004c9946df7b489585f, type: 3}
   startTimeBtwSpawns: 5
---- !u!114 &1547965488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547965486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 871f3058c6d6d144aa6338d40d25e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints: []
-  enemyPrefabs: []
-  startTimeBtwSpawns: 0
 --- !u!4 &1547965489
 Transform:
   m_ObjectHideFlags: 0
