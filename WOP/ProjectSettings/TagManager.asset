@@ -10,7 +10,12 @@ TagManager:
   - Credits
   - Quit
   - Banana
+<<<<<<< Updated upstream
   - Net
+=======
+  - Room 2
+  - Blood
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
