@@ -17,6 +17,8 @@ public class BlockController : MonoBehaviour
 
     public Vector3 buttonPos;
 
+    public GameObject voidOb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,8 @@ public class BlockController : MonoBehaviour
                 renderer.sortingOrder = -1;
 
                 renderer.sprite = topSprite;
+
+                voidOb.SetActive(false);
 
                 gVar.isFilled = true;
             }

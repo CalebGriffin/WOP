@@ -182,9 +182,32 @@ public class PlayerController : MonoBehaviour
 
                 tileToCheck2 = Physics2D.OverlapCircle(targetPos2, 0.3f, ~ignoreRaycastLayer);
 
-                if (tileToCheck2 != null)
+                if (tileToCheck2 == null)
                 {
-                    return false;
+                    tileToCheck.transform.SetParent(transform);
+                    StartCoroutine("WaitToUnparent");
+                    return true;
+                }
+                else if (tileToCheck2 != null)
+                {
+                    if (tileToCheck2.gameObject.layer == 8)
+                    {
+                        return false;
+                    }
+                    else if (tileToCheck2.gameObject.layer == 10)
+                    {
+                        return false;
+                    }
+                    else if (tileToCheck2.gameObject.layer == 12)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        tileToCheck.transform.SetParent(transform);
+                        StartCoroutine("WaitToUnparent");
+                        return true;
+                    }
                 }
                 else
                 {
@@ -198,6 +221,10 @@ public class PlayerController : MonoBehaviour
                 tileToCheck.gameObject.GetComponent<IceBlockController>().Slide(input);
                 lastIceBlockPushed = tileToCheck.gameObject;
                 StartCoroutine("WaitToStop");
+                return false;
+            }
+            else if (tileToCheck.gameObject.layer == 14)
+            {
                 return false;
             }
             else
@@ -221,6 +248,7 @@ public class PlayerController : MonoBehaviour
         lastIceBlockPushed.GetComponent<IceBlockController>().hitSomething = false;
     }
 
+    #region Not Working (Needs to be deleted)
     /*private bool IsWalkable2(Vector3 targetPos)
     {
         hit = Physics2D.Raycast(transform.position, input, 1f, ~ignoreRaycastLayer);
@@ -248,4 +276,5 @@ public class PlayerController : MonoBehaviour
             }
         }
     }*/
+    #endregion
 }
