@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
         controls.Gameplay.Move.performed += ctx => input = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
 
+        controls.Gameplay.Reset.performed += ctx => Restart();
+
         playerAnimator = GetComponent<Animator>();
     }
 
@@ -232,6 +234,11 @@ public class PlayerController : MonoBehaviour
                 return true;
             }
         }
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 0;
     }
 
     public IEnumerator WaitToUnparent()
