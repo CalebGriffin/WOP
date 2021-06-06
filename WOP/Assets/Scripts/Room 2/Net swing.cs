@@ -21,8 +21,6 @@ public class Netswing : MonoBehaviour
         myRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
 
         myAnim.SetFloat("moveX", myRB.velocity.x);
-        myAnim.SetFloat("moveY", myRB.velocity.y); 
+        myAnim.SetFloat("moveY", myRB.velocity.y);
     }
-
-    if (Input.GetAxisRaw("Horizontal") == 1)
 }
