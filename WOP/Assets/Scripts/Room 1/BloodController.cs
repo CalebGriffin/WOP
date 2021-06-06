@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BloodController : MonoBehaviour
 {
     public GameObject[] bloodTiles;
+
+    public GameObject timeCanvas;
 
     public int iterations = 0;
 
@@ -32,12 +35,25 @@ public class BloodController : MonoBehaviour
         if (iterations == 42)
         {
             CancelInvoke("BloodFlow");
-            
-            // Stop the level
+
+            timeCanvas.SetActive(true);
+
+            gVar.normalButton = false;
+            gVar.iceButton = false;
+            gVar.isFilled = false;
+
+            StartCoroutine("WaitToRestart");
         }
         else
         {
             bloodTiles[iterations - 1].SetActive(true);
         }
+    }
+
+    public IEnumerator WaitToRestart()
+    {
+        yield return new WaitForSeconds(5f);
+
+        SceneManager.LoadScene("Room 1");
     }
 }

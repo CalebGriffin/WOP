@@ -186,6 +186,7 @@ public class PlayerController : MonoBehaviour
 
                 if (tileToCheck2 == null)
                 {
+                    Debug.Log("There is nothing on the other side of this block");
                     tileToCheck.transform.SetParent(transform);
                     StartCoroutine("WaitToUnparent");
                     return true;
@@ -206,6 +207,7 @@ public class PlayerController : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log("There is nothing on the other side of this block #2");
                         tileToCheck.transform.SetParent(transform);
                         StartCoroutine("WaitToUnparent");
                         return true;
@@ -243,7 +245,14 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator WaitToUnparent()
     {
-        yield return new WaitForSeconds(0.35f);
+        //yield return new WaitForSeconds(0.35f);
+
+        /*while(isMoving == true)
+        {
+            yield return null;
+        }*/
+
+        yield return new WaitUntil(() => isMoving == false);
 
         Player.transform.DetachChildren();
     }
