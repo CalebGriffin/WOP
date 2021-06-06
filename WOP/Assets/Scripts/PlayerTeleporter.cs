@@ -8,6 +8,20 @@ public class PlayerTeleporter : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        switch (collision.gameObject.tag)
+        {
+            case "Room 1":
+                SceneManager.LoadScene("Room 1");
+                break;
+
+            case "Room 1":
+                SceneManager.LoadScene("Room 1");
+                break;
+            
+            case "Menu":
+                SceneManager.LoadScene("Menu");
+                break;
+        }
         if (collision.gameObject.tag == "Room 1")
         {
             SceneManager.LoadScene("Room 1");

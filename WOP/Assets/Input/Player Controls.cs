@@ -33,6 +33,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""2073cd4b-7ca0-4051-9733-b2491e877952"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -242,6 +250,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7268f29-d68d-4562-99db-55525b8a831f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a889ab5d-ee17-4c35-a01d-5daba8dc8968"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -456,6 +486,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Reset = m_Gameplay.FindAction("Reset", throwIfNotFound: true);
+        m_Gameplay_Quit = m_Gameplay.FindAction("Quit", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
         m_Menu_Up = m_Menu.FindAction("Up", throwIfNotFound: true);
@@ -514,12 +545,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private IGameplayActions m_GameplayActionsCallbackInterface;
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Reset;
+    private readonly InputAction m_Gameplay_Quit;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
         public GameplayActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Reset => m_Wrapper.m_Gameplay_Reset;
+        public InputAction @Quit => m_Wrapper.m_Gameplay_Quit;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -535,6 +568,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Reset.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnReset;
                 @Reset.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnReset;
                 @Reset.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnReset;
+                @Quit.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnQuit;
+                @Quit.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnQuit;
+                @Quit.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnQuit;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -545,6 +581,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Reset.started += instance.OnReset;
                 @Reset.performed += instance.OnReset;
                 @Reset.canceled += instance.OnReset;
+                @Quit.started += instance.OnQuit;
+                @Quit.performed += instance.OnQuit;
+                @Quit.canceled += instance.OnQuit;
             }
         }
     }
@@ -618,6 +657,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnReset(InputAction.CallbackContext context);
+        void OnQuit(InputAction.CallbackContext context);
     }
     public interface IMenuActions
     {

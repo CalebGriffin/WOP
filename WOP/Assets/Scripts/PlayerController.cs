@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         controls.Gameplay.Move.canceled += ctx => input = Vector2.zero;
 
         controls.Gameplay.Reset.performed += ctx => Restart();
+        controls.Gameplay.Quit.performed += ctx => QuitMenu();
 
         playerAnimator = GetComponent<Animator>();
     }
@@ -130,6 +131,15 @@ public class PlayerController : MonoBehaviour
         }
 
         playerAnimator.SetBool("isWalking", isMoving);
+
+        if (gVar.isPaused == true)
+        {
+            controls.Gameplay.Disable();
+        }
+        else if (gVar.isPaused == false)
+        {
+            controls.Gameplay.Enable();
+        }
     }
 
     // Coroutine that moves the player so that they will snap to each tile

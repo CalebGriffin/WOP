@@ -12,6 +12,8 @@ public class Room1UI : MonoBehaviour
 
     public GameObject quitCursor;
 
+    public GameObject uiController;
+
     PlayerControls controls;
 
     // Awake is called even before Start
@@ -86,18 +88,22 @@ public class Room1UI : MonoBehaviour
             }
             else if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
             {
-
+                quitCanvas.SetActive(false);
+                controls.Gameplay.Enable();
+                uiController.SetActive(false);
             }
         }
     }
 
     private void OnEnable() 
     {
+        gVar.isPaused = true;
         controls.Menu.Enable();
     }
 
     private void OnDisable()
     {
+        gVar.isPaused = false;
         controls.Menu.Disable();
     }
 
