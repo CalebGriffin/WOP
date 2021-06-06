@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     // Vector2 to check if the block can be moved
     private Vector2 targetPos2;
 
+    public Vector3 blockTarget;
+
     // Allows the script to be able to check which layer an object is on
     public LayerMask solidObjectsLayer;
 
@@ -31,6 +33,12 @@ public class PlayerController : MonoBehaviour
     public GameObject Player;
 
     public GameObject lastIceBlockPushed;
+
+    public GameObject restartCanvas;
+
+    public GameObject quitCanvas;
+
+    public GameObject uiController;
 
     public Collider2D tileToCheck;
 
@@ -187,8 +195,11 @@ public class PlayerController : MonoBehaviour
                 if (tileToCheck2 == null)
                 {
                     Debug.Log("There is nothing on the other side of this block");
-                    tileToCheck.transform.SetParent(transform);
-                    StartCoroutine("WaitToUnparent");
+                    //tileToCheck.transform.SetParent(transform);
+                    //StartCoroutine("WaitToUnparent");
+
+                    blockTarget = new Vector3(targetPos2.x, targetPos2.y, 0f);
+                    tileToCheck.gameObject.GetComponent<BlockController>().Move(targetPos2);
                     return true;
                 }
                 else if (tileToCheck2 != null)
@@ -208,15 +219,21 @@ public class PlayerController : MonoBehaviour
                     else
                     {
                         Debug.Log("There is nothing on the other side of this block #2");
-                        tileToCheck.transform.SetParent(transform);
-                        StartCoroutine("WaitToUnparent");
+                        //tileToCheck.transform.SetParent(transform);
+                        //StartCoroutine("WaitToUnparent");
+
+                        blockTarget = new Vector3(targetPos2.x, targetPos2.y, 0f);
+                        tileToCheck.gameObject.GetComponent<BlockController>().Move(targetPos2);
                         return true;
                     }
                 }
                 else
                 {
-                    tileToCheck.transform.SetParent(transform);
-                    StartCoroutine("WaitToUnparent");
+                    //tileToCheck.transform.SetParent(transform);
+                    //StartCoroutine("WaitToUnparent");
+
+                    blockTarget = new Vector3(targetPos2.x, targetPos2.y, 0f);
+                    tileToCheck.gameObject.GetComponent<BlockController>().Move(targetPos2);
                     return true;
                 }
             }
@@ -240,7 +257,20 @@ public class PlayerController : MonoBehaviour
 
     public void Restart()
     {
-        Time.timeScale = 0;
+        gVar.isPaused = true;
+        controls.Gameplay.Disable();
+        uiController.SetActive(true);
+
+        restartCanvas.SetActive(true);
+    }
+
+    public void QuitMenu() 
+    {
+        gVar.isPaused = true;
+        controls.Gameplay.Disable();
+        uiController.SetActive(true);
+
+        quitCanvas.SetActive(true);
     }
 
     public IEnumerator WaitToUnparent()

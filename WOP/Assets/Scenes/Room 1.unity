@@ -4095,7 +4095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -40}
+  m_AnchoredPosition: {x: 50, y: -40}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943625756
@@ -8477,6 +8477,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a81bcaf200ff04942b34e6e0ad28b263, type: 3}
+--- !u!1 &1730502760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730502762}
+  - component: {fileID: 1730502761}
+  m_Layer: 0
+  m_Name: UI Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1730502761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730502760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0e2ecb25894bfe893e72303926b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetCanvas: {fileID: 299275441}
+  quitCanvas: {fileID: 966245335}
+  resetCursor: {fileID: 943625754}
+  quitCursor: {fileID: 1147099373}
+--- !u!4 &1730502762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730502760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737642350
 GameObject:
   m_ObjectHideFlags: 0
@@ -8780,7 +8827,7 @@ PrefabInstance:
     - target: {fileID: 2871567363241071344, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2871567363241071344, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
@@ -8792,6 +8839,21 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 69085804}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: restartCanvas
+      value: 
+      objectReference: {fileID: 299275441}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: quitCanvas
+      value: 
+      objectReference: {fileID: 966245335}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: uiController
+      value: 
+      objectReference: {fileID: 1730502760}
     - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
       propertyPath: m_LocalPosition.x

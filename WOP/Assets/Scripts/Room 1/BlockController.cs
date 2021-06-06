@@ -70,4 +70,16 @@ public class BlockController : MonoBehaviour
             transform.position = new Vector2(transform.position.x, (float)Math.Round(transform.position.y) + 0.5f);
         }
     }
+
+    public void Move(Vector3 targetPos)
+    {
+        // Check if the block is basically at the target position
+        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, 1 * Time.deltaTime);
+        }
+
+        // Snap the block to the tile location
+        transform.position = targetPos;
+    }
 }

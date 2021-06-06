@@ -29,17 +29,76 @@ public class Room1UI : MonoBehaviour
 
     void Left()
     {
+        Debug.Log("Left has been pressed");
 
+        if (resetCanvas.activeSelf)
+        {
+            if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
+            {
+                resetCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(-150f, -40f);
+            }
+        }
+        else if (quitCanvas.activeSelf)
+        {
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
+            {
+                quitCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(-150f, -40f);
+            }
+        }
     }
 
     void Right()
     {
-
+        if (resetCanvas.activeSelf)
+        {
+            if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
+            {
+                resetCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(50f, -40f);
+            }
+        }
+        else if (quitCanvas.activeSelf)
+        {
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
+            {
+                quitCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(50f, -40f);
+            }
+        }
     }
 
     void Confirm()
     {
+        if (resetCanvas.activeSelf)
+        {
+            if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
+            {
+                
+            }
+            else if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
+            {
 
+            }
+        }
+        else if (quitCanvas.activeSelf)
+        {
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
+            {
+                Application.Quit();
+            }
+            else if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
+            {
+
+            }
+        }
+    }
+
+    private void OnEnable() 
+    {
+        controls.Menu.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Menu.Disable();
     }
 
     // Start is called before the first frame update

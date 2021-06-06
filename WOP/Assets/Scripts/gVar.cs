@@ -9,4 +9,6 @@ public class gVar
     public static bool iceButton;
 
     public static bool normalButton;
+
+    public static bool isPaused;
 }

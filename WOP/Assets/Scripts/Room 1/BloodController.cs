@@ -11,6 +11,9 @@ public class BloodController : MonoBehaviour
 
     public int iterations = 0;
 
+    // Can see the input that the player is making
+    PlayerControls controls;
+
     /// Awake is called when the script instance is being loaded.
     void Awake()
     {
@@ -20,6 +23,8 @@ public class BloodController : MonoBehaviour
         {
             bloodTile.SetActive(false);
         }
+
+        controls = new PlayerControls();
     }
 
     // Start is called before the first frame update
@@ -30,7 +35,10 @@ public class BloodController : MonoBehaviour
 
     void BloodFlow()
     {
-        iterations++;
+        if (!gVar.isPaused)
+        {
+            iterations++;
+        }
 
         if (iterations == 42)
         {
@@ -46,13 +54,20 @@ public class BloodController : MonoBehaviour
         }
         else
         {
-            bloodTiles[iterations - 1].SetActive(true);
+            if (!gVar.isPaused)
+            {
+                bloodTiles[iterations - 1].SetActive(true);
+            }
         }
     }
 
     public IEnumerator WaitToRestart()
     {
+        controls.Gameplay.Disable();
+
         yield return new WaitForSeconds(5f);
+
+        controls.Gameplay.Enable();
 
         SceneManager.LoadScene("Room 1");
     }
