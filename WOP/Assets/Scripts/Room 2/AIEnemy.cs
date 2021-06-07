@@ -10,9 +10,11 @@ public class AIEnemy : MonoBehaviour
 
     public bool shouldRotate;
 
+    private bool isChasing;
+
     public LayerMask banana;
 
-    private Transform target;
+    private GameObject target;
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 movement;
@@ -25,7 +27,7 @@ public class AIEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        target = GameObject.FindWithTag("Banana").transform;
+        target = GameObject.FindGameObjectWithTag("Banana");
     }
     private void Update()
     {
@@ -33,15 +35,22 @@ public class AIEnemy : MonoBehaviour
 
         isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, banana);
         isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, banana);
-
-        dir = target.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        dir.Normalize();
-        movement = dir;
+        if (target != null)
+        {
+            dir = target.transform.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            dir.Normalize();
+            movement = dir;
+        }
+        
         if (shouldRotate)
         {
             anim.SetFloat("moveX", dir.x);
             anim.SetFloat("moveY", dir.y);
+        }
+        if (!isChasing)
+        {
+            target = GameObject.FindGameObjectWithTag("Banana");
         }
     }
 
@@ -53,12 +62,14 @@ public class AIEnemy : MonoBehaviour
         }
         if (isInAttackRange)
         {
+            isChasing = false;
             rb.velocity = Vector2.zero;
         }
     }
 
     private void MoveCharacter(Vector2 dir)
     {
+        isChasing = true;
         rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
     }
 }
