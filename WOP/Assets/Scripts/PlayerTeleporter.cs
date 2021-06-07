@@ -19,6 +19,7 @@ public class PlayerTeleporter : MonoBehaviour
                 break;
             
             case "Menu":
+                gVar.backToMenu = true;
                 SceneManager.LoadScene("Menu");
                 break;
             

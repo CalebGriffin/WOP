@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -80,7 +81,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (SceneManager.GetSceneByName("Menu").isLoaded && gVar.backToMenu == true)
+        {
+            transform.position = new Vector3(0.5f, 1.5f, 0f);
+            gVar.backToMenu = false;
+        }
     }
 
     // Update is called once per frame
