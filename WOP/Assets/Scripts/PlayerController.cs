@@ -39,7 +39,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject quitCanvas;
 
+    public GameObject quitCanvas2;
+
     public GameObject uiController;
+
+    public GameObject uiController2;
 
     public Collider2D tileToCheck;
 
@@ -281,11 +285,22 @@ public class PlayerController : MonoBehaviour
 
     public void QuitMenu() 
     {
-        gVar.isPaused = true;
-        controls.Gameplay.Disable();
-        uiController.SetActive(true);
+        if (SceneManager.GetSceneByName("Room 1").isLoaded)
+        {
+            gVar.isPaused = true;
+            controls.Gameplay.Disable();
+            uiController.SetActive(true);
 
-        quitCanvas.SetActive(true);
+            quitCanvas.SetActive(true);
+        }
+        else if (SceneManager.GetSceneByName("Menu").isLoaded)
+        {
+            gVar.isPaused = true;
+            controls.Gameplay.Disable();
+            uiController2.SetActive(true);
+
+            quitCanvas2.SetActive(true);
+        }
     }
 
     public IEnumerator WaitToUnparent()
