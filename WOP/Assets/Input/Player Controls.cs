@@ -111,6 +111,61 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""USB Gamepad D-Pad"",
+                    ""id"": ""13437e30-ac1c-4679-86d8-b9fa6c56502e"",
+                    ""path"": ""2DVector(mode=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""d988276b-8b24-4ed5-b29b-b212c8d00998"",
+                    ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e687725b-18d2-4cd9-84eb-2d061599731d"",
+                    ""path"": ""<Joystick>/stick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""10c8f4c3-f15f-4f66-b816-b0910af5a064"",
+                    ""path"": ""<Joystick>/stick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""bf5ca48d-85fb-487f-a773-06ef0cd1655b"",
+                    ""path"": ""<Joystick>/stick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""3a613710-ffc5-4821-9641-dcbb9d3b7a30"",
                     ""path"": ""<Gamepad>/dpad"",
@@ -255,6 +310,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""40aaa6c2-a504-4f6a-8504-874b9ed01ff5"",
+                    ""path"": ""<HID::ShanWan USB Gamepad>/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""b7268f29-d68d-4562-99db-55525b8a831f"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
@@ -268,6 +334,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""a889ab5d-ee17-4c35-a01d-5daba8dc8968"",
                     ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e1763a42-5660-48ac-97cd-5711211994e8"",
+                    ""path"": ""<HID::ShanWan USB Gamepad>/button10"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -358,6 +435,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""5cb8fc07-a506-49b6-af26-57d4877a94ad"",
+                    ""path"": ""<Joystick>/stick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""37539046-a3a2-4b31-b917-78697213e690"",
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
@@ -382,6 +470,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""04100d8b-6601-41a4-b41e-e33a976ead6f"",
                     ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e87d555c-7ee6-4ea4-bc40-1ab1951371f1"",
+                    ""path"": ""<Joystick>/stick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -424,6 +523,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""576d0e7d-c06e-41f6-9031-6f7c2dbdf0b9"",
+                    ""path"": ""<Joystick>/stick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""b51043c0-617b-42b6-a171-5fe7731220c6"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
@@ -457,6 +567,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""719adfec-f9e5-4842-a128-01f92eea149a"",
+                    ""path"": ""<Joystick>/stick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""6e1097d5-90ee-40e4-b69a-cd1461bd001a"",
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
@@ -470,6 +591,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""0aeebdb4-ad5c-409d-a1f8-1ff23b32ef11"",
                     ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Confirm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0fb8fbde-421b-45fb-9786-b427730a32b1"",
+                    ""path"": ""<HID::ShanWan USB Gamepad>/button2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

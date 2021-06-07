@@ -15,6 +15,7 @@ TagManager:
   - Net
   - Menu
   - Enemy
+  - Music
   layers:
   - Default
   - TransparentFX
