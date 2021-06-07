@@ -276,11 +276,14 @@ public class PlayerController : MonoBehaviour
 
     public void Restart()
     {
-        gVar.isPaused = true;
-        controls.Gameplay.Disable();
-        uiController.SetActive(true);
+        if (SceneManager.GetSceneByName("Room 1").isLoaded)
+        {
+            gVar.isPaused = true;
+            controls.Gameplay.Disable();
+            uiController.SetActive(true);
 
-        restartCanvas.SetActive(true);
+            restartCanvas.SetActive(true);
+        }
     }
 
     public void QuitMenu() 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class MenuUI : MonoBehaviour
     public GameObject creditsCanvas;
 
     public GameObject uiController;
+
+    public Slider volumeSlider;
 
     PlayerControls controls;
 
@@ -35,22 +38,60 @@ public class MenuUI : MonoBehaviour
 
     void Up()
     {
-
+        if (quitCanvas.activeSelf)
+        {
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-175f, 50f))
+            {
+                quitCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(-175f, 150f);
+            }
+        }
+        else if (settingsCanvas.activeSelf)
+        {
+            if (settingsCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(175f, -290f))
+            {
+                settingsCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(250f, -50f);
+            }
+        }
     }
 
     void Down()
     {
-
+        if (quitCanvas.activeSelf)
+        {
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-175f, 150f))
+            {
+                quitCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(-175f, 50f);
+            }
+        }
+        else if (settingsCanvas.activeSelf)
+        {
+            if (settingsCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(250f, -50f))
+            {
+                settingsCursor.GetComponent<RectTransform>().anchoredPosition = new Vector2(175f, -290f);
+            }
+        }
     }
 
     void Left()
     {
-        
+        if (settingsCanvas.activeSelf)
+        {
+            if (settingsCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(250f, -50f))
+            {
+                volumeSlider.value = volumeSlider.value - 0.1f;
+            }
+        }
     }
 
     void Right()
     {
-        
+        if (settingsCanvas.activeSelf)
+        {
+            if (settingsCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(250f, -50f))
+            {
+                volumeSlider.value = volumeSlider.value + 0.1f;
+            }
+        }
     }
 
     void Confirm()
@@ -76,6 +117,14 @@ public class MenuUI : MonoBehaviour
         {
             creditsCanvas.SetActive(false);
             uiController.SetActive(false);
+        }
+        else if (settingsCanvas.activeSelf)
+        {
+            if (settingsCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(175f, -290f))
+            {
+                settingsCanvas.SetActive(false);
+                uiController.SetActive(false);
+            }
         }
     }
 
