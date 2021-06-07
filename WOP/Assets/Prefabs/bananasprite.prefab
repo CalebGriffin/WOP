@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7441134331702895454}
   - component: {fileID: 7441134331702895452}
   - component: {fileID: 7441134331702895453}
+  - component: {fileID: 1780002038310837247}
   m_Layer: 11
   m_Name: bananasprite
   m_TagString: Banana
@@ -117,3 +118,15 @@ PolygonCollider2D:
       - {x: 0.32693952, y: 0.11034991}
       - {x: 0.31115234, y: 0.2365958}
       - {x: 0.28035468, y: 0.30624118}
+--- !u!114 &1780002038310837247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441134331702895455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8796da106907741abf2dd71a56bbfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

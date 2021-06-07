@@ -48,7 +48,7 @@ public class AIEnemy : MonoBehaviour
             anim.SetFloat("moveX", dir.x);
             anim.SetFloat("moveY", dir.y);
         }
-        if (!isChasing)
+        if (target == null)
         {
             target = GameObject.FindGameObjectWithTag("Banana");
         }
@@ -62,6 +62,7 @@ public class AIEnemy : MonoBehaviour
         }
         if (isInAttackRange)
         {
+            target = null;
             isChasing = false;
             rb.velocity = Vector2.zero;
         }

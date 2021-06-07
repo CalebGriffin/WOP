@@ -5255,6 +5255,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.601
       objectReference: {fileID: 0}
+    - target: {fileID: 5925896301729288696, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
       propertyPath: m_Name
@@ -12033,6 +12038,18 @@ AimConstraint:
   m_IsContraintActive: 0
   m_IsLocked: 0
   m_Sources: []
+--- !u!114 &2050496455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050496448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8796da106907741abf2dd71a56bbfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2132537359
 GameObject:
   m_ObjectHideFlags: 0
