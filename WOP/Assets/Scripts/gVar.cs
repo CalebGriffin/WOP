@@ -11,4 +11,6 @@ public class gVar
     public static bool normalButton;
 
     public static bool isPaused;
+
+    public static bool backToMenu;
 }
