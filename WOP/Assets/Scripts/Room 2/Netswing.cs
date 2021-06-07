@@ -40,13 +40,13 @@ public class Netswing : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
-            Net.SetBool("isAttack", true);
+            Net.SetBool("isAttacking", true);
 
     }
 
     void FixedUpdate()
     {
-        if (Net.GetBool("isAttack") == true)
+        if (Net.GetBool("isAttacking") == true)
         {
             rb.velocity = Vector2.zero;
         }

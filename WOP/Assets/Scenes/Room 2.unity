@@ -1551,7 +1551,7 @@ PrefabInstance:
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
       propertyPath: m_Name
-      value: froggyAI(Working) (3)
+      value: froggyAI
       objectReference: {fileID: 0}
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
@@ -1966,6 +1966,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1788778840}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1147507622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147507621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045bc599f35f1924396553cef6b78b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1147507629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5368,7 +5380,7 @@ MonoBehaviour:
   - {fileID: 7111786}
   enemyPrefabs:
   - {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f, type: 3}
-  startTimeBtwSpawns: 4
+  startTimeBtwSpawns: 7
 --- !u!1 &1774033170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,7 +5867,7 @@ PrefabInstance:
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
       propertyPath: m_Name
-      value: froggyAI(Working)
+      value: froggyAI
       objectReference: {fileID: 0}
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
@@ -5934,7 +5946,7 @@ PrefabInstance:
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
       propertyPath: m_Name
-      value: froggyAI(Working) (2)
+      value: froggyAI
       objectReference: {fileID: 0}
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
@@ -12831,7 +12843,7 @@ PrefabInstance:
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
       propertyPath: m_Name
-      value: froggyAI(Working) (1)
+      value: froggyAI
       objectReference: {fileID: 0}
     - target: {fileID: 5925896301729288702, guid: 6e5aae80ccaf20b46b2da1f5505d5b5f,
         type: 3}
