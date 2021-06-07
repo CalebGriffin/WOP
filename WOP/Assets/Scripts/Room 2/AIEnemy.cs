@@ -73,4 +73,14 @@ public class AIEnemy : MonoBehaviour
         isChasing = true;
         rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //This code states that when the player collides with a gameobject with the tag "Player" the frog will be destroyed
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
+
