@@ -13778,6 +13778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689500230}
+  - component: {fileID: 1689500231}
   m_Layer: 0
   m_Name: UI Controller
   m_TagString: Untagged
@@ -13799,6 +13800,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689500231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689500229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a9ee04d83e94c86a68c28aaa1e9a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitCanvas: {fileID: 637412529}
+  quitCursor: {fileID: 39239143}
+  settingsCanvas: {fileID: 0}
+  settingsCursor: {fileID: 0}
+  controlsCanvas: {fileID: 0}
+  creditsCanvas: {fileID: 0}
+  uiController: {fileID: 1689500229}
 --- !u!1 &1723137874
 GameObject:
   m_ObjectHideFlags: 0
@@ -14915,6 +14935,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2871567363241071345, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: quitCanvas
+      value: 
+      objectReference: {fileID: 637412529}
+    - target: {fileID: 2871567363241071345, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: settingsCanvas
+      value: 
+      objectReference: {fileID: 934112386}
+    - target: {fileID: 2871567363241071345, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: controlsCanvas
+      value: 
+      objectReference: {fileID: 1217700750}
+    - target: {fileID: 2871567363241071345, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: creditsCanvas
+      value: 
+      objectReference: {fileID: 373409769}
+    - target: {fileID: 2871567363241071345, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: uiController
+      value: 
+      objectReference: {fileID: 1689500229}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: quitCanvas2
+      value: 
+      objectReference: {fileID: 637412529}
+    - target: {fileID: 2871567363241071346, guid: 0c213c0b5568048069be3af71f342d87,
+        type: 3}
+      propertyPath: uiController2
+      value: 
+      objectReference: {fileID: 1689500229}
     - target: {fileID: 2871567363241071347, guid: 0c213c0b5568048069be3af71f342d87,
         type: 3}
       propertyPath: m_LocalPosition.x

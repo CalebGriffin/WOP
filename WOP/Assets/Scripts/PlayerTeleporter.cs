@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 // This script handles all of the different portals in the game and will detect what the player has hit and what to do when they hit it
 public class PlayerTeleporter : MonoBehaviour
 {
+    public GameObject quitCanvas;
+
+    public GameObject settingsCanvas;
+
+    public GameObject controlsCanvas;
+
+    public GameObject creditsCanvas;
+
+    public GameObject uiController;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
@@ -30,6 +40,9 @@ public class PlayerTeleporter : MonoBehaviour
                 break;
             
             case "Credits":
+                break;
+
+            case "Quit":
                 break;
             
             default:

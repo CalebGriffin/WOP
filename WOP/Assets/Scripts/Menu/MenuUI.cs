@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class MenuUI : MonoBehaviour
 {
-    public GameObject resetCanvas;
-
     public GameObject quitCanvas;
 
-    public GameObject resetCursor;
-
     public GameObject quitCursor;
+
+    public GameObject settingsCanvas;
+
+    public GameObject settingsCursor;
+
+    public GameObject controlsCanvas;
+
+    public GameObject creditsCanvas;
 
     public GameObject uiController;
 
@@ -36,7 +40,7 @@ public class MenuUI : MonoBehaviour
 
     void Down()
     {
-        
+
     }
 
     void Left()
@@ -53,15 +57,25 @@ public class MenuUI : MonoBehaviour
     {
         if (quitCanvas.activeSelf)
         {
-            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
+            if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-175f, 150f))
             {
                 Application.Quit();
             }
-            else if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
+            else if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-175f, 50f))
             {
                 quitCanvas.SetActive(false);
                 uiController.SetActive(false);
             }
+        }
+        else if (controlsCanvas.activeSelf)
+        {
+            controlsCanvas.SetActive(false);
+            uiController.SetActive(false);
+        }
+        else if (creditsCanvas.activeSelf)
+        {
+            creditsCanvas.SetActive(false);
+            uiController.SetActive(false);
         }
     }
 
