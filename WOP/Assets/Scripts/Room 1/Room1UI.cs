@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Room1UI : MonoBehaviour
 {
@@ -73,11 +74,18 @@ public class Room1UI : MonoBehaviour
         {
             if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
             {
-                
+                gVar.normalButton = false;
+                gVar.iceButton = false;
+                gVar.isFilled = false;
+
+                resetCanvas.SetActive(false);
+                SceneManager.LoadScene("Room 1");
+                uiController.SetActive(false);
             }
             else if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
             {
-
+                resetCanvas.SetActive(false);
+                uiController.SetActive(false);
             }
         }
         else if (quitCanvas.activeSelf)
@@ -89,7 +97,6 @@ public class Room1UI : MonoBehaviour
             else if (quitCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(50f, -40f))
             {
                 quitCanvas.SetActive(false);
-                controls.Gameplay.Enable();
                 uiController.SetActive(false);
             }
         }

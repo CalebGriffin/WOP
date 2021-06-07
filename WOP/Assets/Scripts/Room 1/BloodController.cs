@@ -43,14 +43,16 @@ public class BloodController : MonoBehaviour
         if (iterations == 42)
         {
             CancelInvoke("BloodFlow");
+            if (gVar.normalButton == false || gVar.iceButton == false)
+            {
+                timeCanvas.SetActive(true);
 
-            timeCanvas.SetActive(true);
+                gVar.normalButton = false;
+                gVar.iceButton = false;
+                gVar.isFilled = false;
 
-            gVar.normalButton = false;
-            gVar.iceButton = false;
-            gVar.isFilled = false;
-
-            StartCoroutine("WaitToRestart");
+                StartCoroutine("WaitToRestart");
+            }
         }
         else
         {
@@ -63,11 +65,11 @@ public class BloodController : MonoBehaviour
 
     public IEnumerator WaitToRestart()
     {
-        controls.Gameplay.Disable();
+        gVar.isPaused = true;
 
         yield return new WaitForSeconds(5f);
 
-        controls.Gameplay.Enable();
+        gVar.isPaused = false;
 
         SceneManager.LoadScene("Room 1");
     }
