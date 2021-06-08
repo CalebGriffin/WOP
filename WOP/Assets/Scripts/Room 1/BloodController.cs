@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BloodController : MonoBehaviour
 {
-    public GameObject[] bloodTiles;
+    public GameObject[] bloodTilesSorted;
+
+    public List<GameObject> bloodTiles;
 
     public GameObject timeCanvas;
 
@@ -17,9 +20,13 @@ public class BloodController : MonoBehaviour
     /// Awake is called when the script instance is being loaded.
     void Awake()
     {
-        bloodTiles = GameObject.FindGameObjectsWithTag("Blood");
+        //bloodTiles = GameObject.FindGameObjectsWithTag("Blood");
 
-        foreach (GameObject bloodTile in bloodTiles)
+        bloodTiles = GameObject.FindGameObjectsWithTag("Blood").ToList();
+
+        bloodTilesSorted = bloodTiles.OrderBy(bloodTile => bloodTile.name).ToArray();
+
+        foreach (GameObject bloodTile in bloodTilesSorted)
         {
             bloodTile.SetActive(false);
         }
@@ -58,7 +65,7 @@ public class BloodController : MonoBehaviour
         {
             if (!gVar.isPaused)
             {
-                bloodTiles[iterations - 1].SetActive(true);
+                bloodTilesSorted[iterations - 1].SetActive(true);
             }
         }
     }
