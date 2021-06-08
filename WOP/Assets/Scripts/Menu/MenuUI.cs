@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
 {
+    // References to all of the UI elements
     public GameObject quitCanvas;
 
     public GameObject quitCursor;
@@ -36,6 +37,7 @@ public class MenuUI : MonoBehaviour
         controls.Menu.Confirm.performed += ctx => Confirm();
     }
 
+    // Moves the cursor up
     void Up()
     {
         if (quitCanvas.activeSelf)
@@ -54,6 +56,7 @@ public class MenuUI : MonoBehaviour
         }
     }
 
+    // Moves the cursor down
     void Down()
     {
         if (quitCanvas.activeSelf)
@@ -72,6 +75,7 @@ public class MenuUI : MonoBehaviour
         }
     }
 
+    // Moves the cursor left
     void Left()
     {
         if (settingsCanvas.activeSelf)
@@ -83,6 +87,7 @@ public class MenuUI : MonoBehaviour
         }
     }
 
+    // Moves the cursor right
     void Right()
     {
         if (settingsCanvas.activeSelf)
@@ -94,6 +99,7 @@ public class MenuUI : MonoBehaviour
         }
     }
 
+    // Carrys out the action based on which canvas is active and where the cursor is on the canvas
     void Confirm()
     {
         if (quitCanvas.activeSelf)
@@ -128,6 +134,7 @@ public class MenuUI : MonoBehaviour
         }
     }
 
+    // Enables and disables the controls when the object is enabled and disabled
     private void OnEnable() 
     {
         gVar.isPaused = true;

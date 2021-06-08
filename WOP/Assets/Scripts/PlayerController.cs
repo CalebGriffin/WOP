@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     // Tracks if the player is moving or not
     public bool isMoving;
 
+    // Tracks if the player is pushing a block
     public bool isPushing;
 
     // Vector2 variable to control input
@@ -29,12 +30,15 @@ public class PlayerController : MonoBehaviour
     // Allows the script to be able to check if the player is touching a block
     public LayerMask blockLayer;
 
+    // Layer for ignoring physics objects
     public LayerMask ignoreRaycastLayer;
 
+    // Reference to the player game object
     public GameObject Player;
 
     public GameObject lastIceBlockPushed;
 
+    // All of the different UI elements that the player will need to access
     public GameObject restartCanvas;
 
     public GameObject quitCanvas;
@@ -45,6 +49,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject uiController2;
 
+    // References to different tiles that the player will check if they are empty
     public Collider2D tileToCheck;
 
     public Collider2D tileToCheck2;
@@ -139,8 +144,10 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector2(transform.position.x, (float)Math.Round(transform.position.y) + 0.5f);
         }
 
+        // Sets a parameter on the animator
         playerAnimator.SetBool("isWalking", isMoving);
 
+        // Enables and disables the controls based on whether the game is paused or not
         if (gVar.isPaused == true)
         {
             controls.Gameplay.Disable();

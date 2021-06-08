@@ -11,6 +11,7 @@ public class DoorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Sets the portal to inactive and set the door to active
         room2Portal.SetActive(false);
         door.SetActive(true);
     }
@@ -18,6 +19,7 @@ public class DoorController : MonoBehaviour
     // FixedUpdate is called 50 times per second
     void FixedUpdate()
     {
+        // If the player has solved the puzzles then set the door to inactive and set the portal to active
         if (gVar.normalButton && gVar.iceButton)
         {
             door.SetActive(false);

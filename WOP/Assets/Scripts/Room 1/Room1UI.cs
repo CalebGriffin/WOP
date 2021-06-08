@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Room1UI : MonoBehaviour
 {
+    // References to all of the UI elements
     public GameObject resetCanvas;
 
     public GameObject quitCanvas;
@@ -32,6 +33,7 @@ public class Room1UI : MonoBehaviour
 
     void Left()
     {
+        // Moves the cursor left on the appropriate UI menu
         Debug.Log("Left has been pressed");
 
         if (resetCanvas.activeSelf)
@@ -52,6 +54,7 @@ public class Room1UI : MonoBehaviour
 
     void Right()
     {
+        // Moves the cursor right on the appropriate UI menu
         if (resetCanvas.activeSelf)
         {
             if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
@@ -70,6 +73,7 @@ public class Room1UI : MonoBehaviour
 
     void Confirm()
     {
+        // Carrys out an action based on which canvas is active and where the cursor is on the canvas
         if (resetCanvas.activeSelf)
         {
             if (resetCursor.GetComponent<RectTransform>().anchoredPosition == new Vector2(-150f, -40f))
@@ -102,6 +106,7 @@ public class Room1UI : MonoBehaviour
         }
     }
 
+    // Enables and Disables the controls when the object is enabled and disabled
     private void OnEnable() 
     {
         gVar.isPaused = true;
@@ -112,17 +117,5 @@ public class Room1UI : MonoBehaviour
     {
         gVar.isPaused = false;
         controls.Menu.Disable();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

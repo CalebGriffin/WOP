@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 // This script handles all of the different portals in the game and will detect what the player has hit and what to do when they hit it
 public class PlayerTeleporter : MonoBehaviour
 {
+    // References all of the UI elements
     public GameObject quitCanvas;
 
     public GameObject settingsCanvas;
@@ -16,6 +17,7 @@ public class PlayerTeleporter : MonoBehaviour
 
     public GameObject uiController;
 
+    // When the player collides with a portal which should take them to the next level then open it, if it is a UI portal then display the UI
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)

@@ -22,31 +22,37 @@ public class BloodController : MonoBehaviour
     {
         //bloodTiles = GameObject.FindGameObjectsWithTag("Blood");
 
+        // Gets all of the gameobjects that make up the blood and sort them by name so that they are in order
         bloodTiles = GameObject.FindGameObjectsWithTag("Blood").ToList();
 
         bloodTilesSorted = bloodTiles.OrderBy(bloodTile => bloodTile.name).ToArray();
 
+        // Sets all of the blood objects to inactive
         foreach (GameObject bloodTile in bloodTilesSorted)
         {
             bloodTile.SetActive(false);
         }
 
+        // Gets a reference to the players controls
         controls = new PlayerControls();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        // Every 4 seconds call this function
         InvokeRepeating("BloodFlow", 1f, 4f);
     }
 
     void BloodFlow()
     {
+        // If the game is not paused then increase the number of iterations
         if (!gVar.isPaused)
         {
             iterations++;
         }
 
+        // If the blood has filled up then restart the level
         if (iterations == 42)
         {
             CancelInvoke("BloodFlow");
@@ -63,6 +69,7 @@ public class BloodController : MonoBehaviour
         }
         else
         {
+            // Activate the next blood object
             if (!gVar.isPaused)
             {
                 bloodTilesSorted[iterations - 1].SetActive(true);
@@ -70,6 +77,7 @@ public class BloodController : MonoBehaviour
         }
     }
 
+    // Waits to restart after showing the restart message
     public IEnumerator WaitToRestart()
     {
         gVar.isPaused = true;

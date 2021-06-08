@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script contains any global variables that can be accessed by any script across the whole game
 public class gVar
 {
     public static bool isFilled;

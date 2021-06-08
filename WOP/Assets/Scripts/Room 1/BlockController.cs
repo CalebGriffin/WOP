@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class BlockController : MonoBehaviour
 {
+    // Tracks if the block is moving
     public bool isMoving;
 
+    // The blocks hitbox
     public BoxCollider2D hitbox;
-    
+
     public SpriteRenderer renderer;
 
     public Sprite topSprite;
@@ -22,6 +24,7 @@ public class BlockController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Sets the position of the void and the button
         voidPos = new Vector3(4.5f, 0.5f, 0f);
         buttonPos = new Vector3(4.5f, 2.5f, 0);
     }
@@ -71,6 +74,7 @@ public class BlockController : MonoBehaviour
         }
     }
 
+    // Moves the block when called by the player
     public void Move(Vector3 targetPos)
     {
         // Check if the block is basically at the target position
