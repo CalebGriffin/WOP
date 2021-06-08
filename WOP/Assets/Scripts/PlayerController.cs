@@ -326,34 +326,4 @@ public class PlayerController : MonoBehaviour
 
         lastIceBlockPushed.GetComponent<IceBlockController>().hitSomething = false;
     }
-
-    #region Not Working (Needs to be deleted)
-    /*private bool IsWalkable2(Vector3 targetPos)
-    {
-        hit = Physics2D.Raycast(transform.position, input, 1f, ~ignoreRaycastLayer);
-        Debug.DrawRay(transform.position, input, Color.white, 1f);
-
-        if (hit.transform == null)
-        {
-            return true;
-        }
-        else
-        {
-            // Uses a physics object to check the mask of the collision and then returns a bool to say if it can be walked on or not
-            if (hit.transform.gameObject.layer == solidObjectsLayer)
-            {
-                return false;
-            }
-            else if (hit.transform.gameObject.layer == blockLayer)
-            {
-                hit.transform.SetParent(transform);
-                return true;
-            }
-            else
-            {
-                return true;
-            }
-        }
-    }*/
-    #endregion
 }
