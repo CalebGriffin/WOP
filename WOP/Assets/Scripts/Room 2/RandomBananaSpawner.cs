@@ -9,12 +9,23 @@ public class RandomBananaSpawner : MonoBehaviour
 
     private int rand;
 
+    private int i;
+
     public float startTimeBtwSpawns;
     private float timeBtwSpawns;
 
     void Start()
     {
         timeBtwSpawns = startTimeBtwSpawns;
+        while (i <= 4)
+        {
+            int randEnemy = Random.Range(0, enemyPrefabs.Length);
+            int randSpawPoint = Random.Range(0, spawnPoints.Length);
+
+            Instantiate(enemyPrefabs[0], spawnPoints[randSpawPoint].position, transform.rotation);
+
+            i++;
+        }
     }
 
     void Update()

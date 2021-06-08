@@ -47,7 +47,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8ad7ba0f-29ad-4db0-85f0-c0328674e709"",
-                    ""path"": ""<HID::Unknown DUALSHOCK 4 Wireless Controller>/hat"",
+                    ""path"": ""8BitDo D-Pad"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

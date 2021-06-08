@@ -15,6 +15,7 @@ public class AIEnemy : MonoBehaviour
     public LayerMask banana;
 
     private GameObject target;
+    private GameObject[] tmpTarget;
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 movement;
@@ -27,14 +28,14 @@ public class AIEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        target = GameObject.FindGameObjectWithTag("Banana");
+        target = null;
     }
     private void Update()
     {
-        anim.SetBool("isMoving", isInChaseRange);
+        anim.SetBool("isMoving", isChasing);
 
-        isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, banana);
-        isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, banana);
+        //isInChaseRange = Physics2D.OverlapCircle(transform.position, checkRadius, banana);
+        //isInAttackRange = Physics2D.OverlapCircle(transform.position, attackRadius, banana);
         if (target != null)
         {
             dir = target.transform.position - transform.position;
@@ -50,22 +51,33 @@ public class AIEnemy : MonoBehaviour
         }
         if (target == null)
         {
-            target = GameObject.FindGameObjectWithTag("Banana");
+            tmpTarget = GameObject.FindGameObjectsWithTag("Banana");
+
+            foreach (GameObject i in tmpTarget)
+            {
+                float dist = Vector3.Distance(i.transform.position, transform.position);
+                if (dist <= 7.5f)
+                {
+                    target = i;
+                    break;
+                }
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (isInChaseRange && !isInAttackRange)
+        if (target != null)
         {
-            MoveCharacter(movement);
+            StartCoroutine("WaitToChase");
         }
-        if (isInAttackRange)
-        {
-            target = null;
-            isChasing = false;
-            rb.velocity = Vector2.zero;
-        }
+    }
+
+    private IEnumerator WaitToChase()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        MoveCharacter(movement);
     }
 
     private void MoveCharacter(Vector2 dir)
@@ -79,6 +91,16 @@ public class AIEnemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Banana")
+        {
+            Destroy(other.gameObject);
+            target = null;
+            isChasing = false;
+            rb.velocity = Vector2.zero;
         }
     }
 }

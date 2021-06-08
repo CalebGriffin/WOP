@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7441134331702895454}
   - component: {fileID: 7441134331702895452}
-  - component: {fileID: 7441134331702895453}
-  - component: {fileID: 1780002038310837247}
+  - component: {fileID: -5313970131234067189}
   m_Layer: 11
   m_Name: bananasprite
   m_TagString: Banana
@@ -83,8 +82,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &7441134331702895453
-PolygonCollider2D:
+--- !u!61 &-5313970131234067189
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106,27 +105,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.23304962, y: 0.31606388}
-      - {x: 0.23976183, y: 0.21943513}
-      - {x: 0.038635343, y: -0.0005632937}
-      - {x: -0.18212774, y: -0.08973403}
-      - {x: -0.16739374, y: -0.23079795}
-      - {x: 0.16115236, y: -0.21115252}
-      - {x: 0.30133003, y: -0.07230507}
-      - {x: 0.32693952, y: 0.11034991}
-      - {x: 0.31115234, y: 0.2365958}
-      - {x: 0.28035468, y: 0.30624118}
---- !u!114 &1780002038310837247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7441134331702895455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8796da106907741abf2dd71a56bbfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
